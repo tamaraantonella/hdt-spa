@@ -79,7 +79,7 @@ header .header__nav{
     width: 100%; 
     height: 100%;
     background-color: var(--primary-color);
-    overflow-y: scroll;
+
 }
 .header__navMenu{
     display: flex;
@@ -147,11 +147,15 @@ header nav ul li a{
     nav .header__closeMenu{
         display: none;
     }
+    .header__navMenu li{
+        transition: all 0.3s ease-in;
+        
+    }
 
-    li a:hover{
+    .header__navMenu li:hover{
         color: var(--hoover-color);
         text-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.5);
-        transition: all 0.3s ease-in;
+        transform: scale(1.1);
     }
       
     
@@ -204,6 +208,8 @@ li a:hover{
     text-align: center;
     color: #8E9775;
 }
+
+
 /* ++++++++++++++++++++FIN FOOTER++++++++++++++++++++ */
 
 /*+++++++++++++++++++++++++++++
@@ -280,45 +286,59 @@ li a:hover{
     text-align: center;
 }
 
+
 .main__bannerLink a{
-    display: none;
+    text-decoration: none;
+    display: block;
+    color: white;
+    background-color: #3E7C17;
+    padding: 10px;
+    font-size: 2rem; 
+
 }
 .main__containerFoto{
     display: flex;
 
 }
 .main__containerFoto>img{
-
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 @media screen and (min-width:768px){
     .main__bannerLink a{
-        text-decoration: none;
-        display: block;
-        color: white;
-        background-color: #3E7C17;
-        padding: 10px;
-        font-size: 2rem; 
+        transition: all 0.5s ease-in;
     
     }
     .main__bannerLink a:hover{
-        color: #E28F83;
+        color: var(--hoover-color);
         text-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.5);
-        transition: all 0.5s ease-in;
+        
     } 
+    .main__banner h1{
+        font-size: 6rem;
+    }
 }
 
 .main__textBox{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
     margin-bottom: 10px;
     color: var(--primary-color);
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
     width: 90%;
 }
+
 .main__textBoxTitulo{
     font-size: 2rem;
     font-weight: bolder;
+}
+.main__textBox a{
+    text-decoration: none;
+    color: var(--text-color);
 }
 @media screen and (min-width:768px){
     .main{
@@ -329,6 +349,22 @@ li a:hover{
             "foto1 foto2 foto3"
             "text1 text2 text3";
         grid-row-gap: 20px;
+    }
+    .main__textBox{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+    }
+    
+    .main__bannerLink a{
+        transition: all 1s ease-in-out;
+    }
+    .main__bannerLink a:hover{
+        transform: scale(1.3);
+        background-color: var(--hoover-color);
+        color: #e5e5e5;
     }
 }
 
@@ -351,26 +387,39 @@ li a:hover{
     justify-items: center;
 }
 
-.main__section--contactData>iframe{
-    width: 90%;
-}
+
 .main__section--contactData{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.main__section--contactData .main__contactSection--ubicacion iframe{
+    width: 80%;
+    height: 60%;
+}
+.main__contactSection--horarios, .main__contactSection--ubicacion{
+    background-color: var(--body--bg);
+    margin-bottom: 1rem;
 }
 .main__section--contactData a{
     text-decoration: none;
     color: #3E7C17;
+    transition: all 1s ease-in-out;
+    padding: 5px;
 }
 
-.main__section--contactData a:hover{
-    color: #E28F83;
-    transition: all 0.8s ease-in;
+.main__section--contactData h1 a:hover{
+    color: var(--body--bg);    
+    background-color: var(--hoover-color);
 }
 
 .main__section--contact{
     display: grid;
+    width: 80%;
     justify-content: center;
     align-items: center;
+    align-self: center;
 }
 
 .main__section--contactForm{
@@ -498,6 +547,25 @@ li a:hover{
 /* +++++++++++++++++ ++++++++++++++++++++++++ */
 /* +++++++++++++++++  PRODUCTOS ++++++++++++++++++++++++ */
 /* +++++++++++++++++ ++++++++++++++++++++++++ */
+.productos--title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    color:var(--secundary-color);
+    font-family: 'Amatic SC', cursive;
+    box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+.productos--title h1{
+    font-size: 3rem;
+}
+.productos--title a{
+    color: var(--secundary-color);
+    text-decoration: none;
+}
+
 .productos{
     display: grid;
     grid-template-columns: repeat(2,50%);
@@ -520,12 +588,25 @@ li a:hover{
 
     .productos{
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
         margin: 2rem auto;
         grid-column-gap: 10px;
         text-align: center;
+        width: 90%;
+        align-self: center;
+        grid-row-gap: 10px;
     
     }
+
+    .productos--title p{
+        transition: all 1s ease-in-out;
+        padding: 5px;
+    }
+    .productos--title p:hover{
+        background-color: var(--body--bg);
+        transform: scale(1.4);
+    }
+    
     
 }
 

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- fuente de tipografía -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,9 +41,14 @@
     </header>
     <!-- main -->
     <main>
+        <div class="productos--title">
+            <h1>Variedades de semillas</h1>
+            <p><a href="wa.link/y0bft8">Consultar disponibilidad</a></p>
+        </div>
+
         <div class="productos">
             <div class="productosTomates">
-                <h2>Tomates</h2>
+                <h2 class="productos--boxtitle">Tomates</h2>
                 <ul>
                     <li>Corazón de buey rayado</li>
                     <li>Corazón de buey rojo</li>
@@ -62,7 +68,7 @@
                 </ul>
             </div>
             <div class="productosPepinos">
-                <h2>Pepinos</h2>
+                <h2 class="productos--boxtitle">Pepinos</h2>
                 <ul>
                     <li>Sikkim</li>
                     <li>Erizo</li>
@@ -74,7 +80,7 @@
                 </ul> 
             </div>
             <div class="productosExoticos">
-                <h2>Variedades exóticas</h2>
+                <h2 class="productos--boxtitle">Variedades exóticas</h2>
                 <ul>
                     <li>Okra Verde</li>
                     <li>Okra roja</li>
@@ -88,7 +94,7 @@
                 </ul>  
             </div> 
             <div class="productosAjies">
-                <h2>Ajíes picantes</h2>
+                <h2 class="productos--boxtitle">Ajíes picantes</h2>
                 <ul>
                     <li>MA purple</li>
                     <li>Brazilian Pumpkin </li>
@@ -106,7 +112,7 @@
                 </ul> 
             </div>   
             <div class="productosZapallos">
-                <h2>Zapallos</h2>
+                <h2 class="productos--boxtitle">Zapallos</h2>
                 <ul>
                     <li>Angola</li>
                     <li>Muscari</li>
@@ -127,7 +133,7 @@
     <footer>
         <nav class="footer__ContainerMenu">
             <ul class="footer__ContainerMenu--Lista">
-                <li class="footer__ContainerMenu--ListaItem"><a href="../index.html">Home</a></li>
+                <li class="footer__ContainerMenu--ListaItem"><a href="../index.html">Inicio</a></li>
                 <li class="footer__ContainerMenu--ListaItem"><a href="aboutus.html">Nosotras</a></li>
                 <li class="footer__ContainerMenu--ListaItem"><a href="productos.html">Productos</a></li>
                 <li class="footer__ContainerMenu--ListaItem"><a href="tips.html">Tips</a></li>
@@ -146,6 +152,9 @@
             <p>&copy; Todos los derechos reservados</p>
         </div>
     </footer>     
-    
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>

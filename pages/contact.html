@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- fuente de tipografía -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,13 +45,19 @@
     <main>
         <section class="main__contactSection">
             <div class="main__section--contactData">
-                <a href="http://wa.link/0435k6">Escribinos a nuestro whatsapp</a>
-                <h4>Podes comunicarte con nosotras en los siguientes horarios:</h4>
-                <p>Atencion telefonica: Lunes a viernes 9-18hs</p>
-                <p>Atención presencial en la huerta: miércoles y sábados 9-12hs</p>
-                <h4>Ubicación</h4>
-                <p>J. Mermoz norte 2433 Escobar</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3295.013067916215!2d-58.78764258541363!3d-34.32468658053274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb611ccefc9223%3A0x6b389041d6d7de9e!2sJuan%20Mermoz%20Nte.%202433%2C%20Bel%C3%A9n%20de%20Escobar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1647300534621!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div>
+                    <h1 class="animate__animated animate__fadeInRightBig"><a href="http://wa.link/0435k6">Escribinos a nuestro whatsapp</a></h1>
+                </div>
+                <div class="main__contactSection--horarios">
+                    <h4>Podes comunicarte con nosotras en los siguientes horarios:</h4>
+                    <p>Atencion telefonica: Lunes a viernes 9-18hs</p>
+                    <p>Atención presencial en la huerta: miércoles y sábados 9-12hs</p>
+                </div>
+                <div class="main__contactSection--ubicacion">
+                    <h4>Ubicación</h4>
+                    <p>J. Mermoz norte 2433 Escobar</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3295.013067916215!2d-58.78764258541363!3d-34.32468658053274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb611ccefc9223%3A0x6b389041d6d7de9e!2sJuan%20Mermoz%20Nte.%202433%2C%20Bel%C3%A9n%20de%20Escobar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1647300534621!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
             </div>
             <div class="main__section--contact">
                 <form action="" method="get" enctype="application/x-www-form-urlencoded" class="main__section--contactForm">
@@ -78,7 +85,7 @@
     <footer>
         <nav class="footer__ContainerMenu">
             <ul class="footer__ContainerMenu--Lista">
-                <li class="footer__ContainerMenu--ListaItem"><a href="../index.html">Home</a></li>
+                <li class="footer__ContainerMenu--ListaItem"><a href="../index.html">Inicio</a></li>
                 <li class="footer__ContainerMenu--ListaItem"><a href="aboutus.html">Nosotras</a></li>
                 <li class="footer__ContainerMenu--ListaItem"><a href="productos.html">Productos</a></li>
                 <li class="footer__ContainerMenu--ListaItem"><a href="tips.html">Tips</a></li>
@@ -97,6 +104,9 @@
             <p>&copy; Todos los derechos reservados</p>
         </div>
     </footer>       
-    
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>

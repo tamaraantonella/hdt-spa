@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     <!-- Font awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Huerta del tomate</title>
+
 </head>
 <body>
     <!-- encabezado -->
@@ -43,7 +45,7 @@
     </header>
     <main class="main">
         <!-- ++++++++++++++++ BANNER +++++++++++++++++++-->
-        <section class="main__banner">
+        <section class="main__banner animate__animated animate__backInDown">
             <h1>Huerta orgánica y agroecológica</h1>
             <div class="main__bannerLink">
                 <a href="pages/productos.html">NUESTRAS VARIEDADES</a>
@@ -62,7 +64,7 @@
         </section>
         <!-- texto -->
         <div class="main__textBox" id="text1">
-                <p class="main__textBoxTitulo">Visitanos</p>
+                <p class="main__textBoxTitulo"><a href="pages/contact.html">Visitanos</a> </p>
                 <p>Podes encontrarnos en Belén de Escobar, Partido de Escobar, Buenos Aires.</p>
                 <p> J. Mermoz norte 2433 Escobar</p>
         </div>
@@ -81,7 +83,7 @@
     <footer>
         <nav class="footer__ContainerMenu">
             <ul class="footer__ContainerMenu--Lista">
-                <li class="footer__ContainerMenu--ListaItem"><a href="index.html">Home</a></li>
+                <li class="footer__ContainerMenu--ListaItem"><a href="index.html">Inicio</a></li>
                 <li class="footer__ContainerMenu--ListaItem"><a href="pages/aboutus.html">Nosotras</a></li>
                 <li class="footer__ContainerMenu--ListaItem"><a href="pages/productos.html">Productos</a></li>
                 <li class="footer__ContainerMenu--ListaItem"><a href="pages/tips.html">Tips</a></li>
@@ -99,6 +101,10 @@
         <div class="footer__Copyright">
             <p>&copy; Todos los derechos reservados</p>
         </div>
-    </footer>    
+    </footer>   
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script> 
 </body>
 </html>
