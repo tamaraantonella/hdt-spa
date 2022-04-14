@@ -23,11 +23,11 @@ main{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-body{
+/* body{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
-}
+} */
 /*+++++++++++++++++++++++++++++++++ HEADER ++++++++++++++++++++++++++++++++*/
 header{
     display: flex;
@@ -218,44 +218,7 @@ li a:hover{
 
 
 /* GRID */
-.main{
-    display: grid;
-    justify-items: center;
-    align-items: stretch;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1.5fr 1fr 1fr 1fr 0.5fr 0.5fr 0.5fr;
-    grid-template-areas:"banner"
-    "foto1" 
-    "foto2" 
-    "foto3"
-    "text1" 
-    "text2" 
-    "text3";
-    grid-row-gap: 10px;
-}
 
-.main__banner{
-    grid-area: banner;
-}
-#Tomate{
-    grid-area: foto1;
-}
-#Choclo{
-    grid-area: foto2;
-}
-#Zapallo{
-    grid-area: foto3;
-}
-
-#text1{
-    grid-area: text1;
-}
-#text2{
-    grid-area: text2;
-}
-#text3{
-    grid-area: text3;
-}
 
 .main__banner{
     width: 100%;
@@ -271,6 +234,7 @@ li a:hover{
     filter: grayscale(30%) brightness(90%);
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     color: white;
+    height: 400px;
 }
 
 .main__banner h1{
@@ -302,8 +266,18 @@ li a:hover{
 }
 .main__containerFoto>img{
     width: 100%;
-    height: 100%;
     object-fit: cover;
+}
+.carousel-inner{
+    height: 250px
+}
+.carousel-inner img{
+    object-fit: cover;
+}
+
+#carouselExampleControls{
+    width: 100%;
+    margin: 20px auto;
 }
 @media screen and (min-width:768px){
     .main__bannerLink a{
@@ -318,9 +292,30 @@ li a:hover{
     .main__banner h1{
         font-size: 6rem;
     }
+    .carousel-inner{
+        height: 400px;
+    }
+    #carouselExampleControls{
+        width: 60%;
+        margin: 20px auto;
+    }
 }
 
 .main__textBox{
+    text-align: center;
+    color: var(--primary-color);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+}
+.main__textBoxTitulo{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.main__textBox a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+/* .main__textBox{
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -330,16 +325,9 @@ li a:hover{
     color: var(--primary-color);
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
     width: 90%;
-}
+}*/
 
-.main__textBoxTitulo{
-    font-size: 2rem;
-    font-weight: bolder;
-}
-.main__textBox a{
-    text-decoration: none;
-    color: var(--text-color);
-}
+
 @media screen and (min-width:768px){
     .main{
         grid-template-columns: repeat(3, 1fr);
@@ -366,7 +354,7 @@ li a:hover{
         background-color: var(--hoover-color);
         color: #e5e5e5;
     }
-}
+} 
 
 /* +++++++++++++++++++++++++++++ */
 /*+++++++++++++ FIN INDEX +++++++++++++++++++++++++++*/
@@ -380,18 +368,23 @@ li a:hover{
 .main__contactSection{
     display: flex;
     flex-direction: column;
-    padding: 20px 0px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     min-height: 90vh;
     font-family: 'Source Sans Pro', sans-serif;
-    justify-items: center;
+    justify-content: center;
+
 }
 
-
+.form{
+    display: flex;
+    justify-content: center;
+}
 .main__section--contactData{
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    
     
 }
 .main__section--contactData .main__contactSection--ubicacion iframe{
@@ -399,8 +392,10 @@ li a:hover{
     height: 60%;
 }
 .main__contactSection--horarios, .main__contactSection--ubicacion{
-    background-color: var(--body--bg);
     margin-bottom: 1rem;
+}
+.main__contactSection--horarios{
+    background-color: var(--body--bg);
 }
 .main__section--contactData a{
     text-decoration: none;
@@ -420,7 +415,7 @@ li a:hover{
     justify-content: center;
     align-items: center;
     align-self: center;
-}
+} 
 
 .main__section--contactForm{
     display: grid;
@@ -490,10 +485,15 @@ li a:hover{
 
     .main__contactSection{
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 20px auto;
 
     }
-    
+    .main__section--contactData .main__contactSection--ubicacion iframe{
+        width: 100%;
+        
+    }
 }
 
 /* +++++++++++++++++ ++++++++++++++++++++++++ */
@@ -547,7 +547,27 @@ li a:hover{
 /* +++++++++++++++++ ++++++++++++++++++++++++ */
 /* +++++++++++++++++  PRODUCTOS ++++++++++++++++++++++++ */
 /* +++++++++++++++++ ++++++++++++++++++++++++ */
-.productos--title{
+.container--productos div ul li{
+    list-style: none;
+}
+#productos-title {
+    color:var(--secundary-color);
+    font-family: 'Amatic SC', cursive;
+    box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+#productos-title a{
+    color: var(--secundary-color);
+    text-decoration: none;
+}
+.productos--boxtitle{
+    background-color: var(--hoover-color);
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+/* .productos--title{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -578,15 +598,11 @@ li a:hover{
     list-style-type: none;
 
 }
-.productos h2{
-    background-color: var(--hoover-color);
-    color: white;
-    height: 30px;
-}
+*/
 /* MEDIA QUERIES */
 @media screen and (min-width:768px) {
 
-    .productos{
+    /* .productos{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         margin: 2rem auto;
@@ -607,7 +623,18 @@ li a:hover{
         transform: scale(1.4);
     }
     
-    
+     */
+     #productos-title a:hover{
+        transform: scale(1.4) !important;
+     }
+     #productos-title p:hover{
+        background-color: var(--body--bg) !important; 
+        transform: scale(1.4) !important;
+    }
+    #productos-title p{
+        transition: all 1s ease-in-out;
+        padding: 5px;
+    }
 }
 
 /* +++++++++++++++++ ++++++++++++++++++++++++ */

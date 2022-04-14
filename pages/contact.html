@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
     <!-- fuente de tipografía -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,24 +64,26 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3295.013067916215!2d-58.78764258541363!3d-34.32468658053274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb611ccefc9223%3A0x6b389041d6d7de9e!2sJuan%20Mermoz%20Nte.%202433%2C%20Bel%C3%A9n%20de%20Escobar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1647300534621!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
-            <div class="main__section--contact">
-                <form action="" method="get" enctype="application/x-www-form-urlencoded" class="main__section--contactForm">
-                    <h2 class="main__section--contactData--FormTitulo">Escribinos</h2>
-                    <!--campo de nombre-->
-                    <input type="text" name="nombre" id="camponombre" placeholder="Nombre completo" required>
-                    <!--campo de contacto-->
-                    <input type="tel" name="telefono" id="campotelefono" placeholder="Telefono" required>
-                    <!--campo de email-->
-                    <input type="email" name="email" id="campoemail" placeholder="Escribe tu email" required>
-                    <!-- Area de texto -->
-                    <textarea id="comentario" name="areatexto" rows="15" cols="50"></textarea>
-                    <!-- Boton de enviar y reset -->
-                    <div class="main__section--contactForm__buttons">
-                        <button type="submit" value="Enviar" class="button__send">Enviar</button>
-                        <button type="reset" value="Reset" class="button__reset">Reset</button>
-                    </div>
+            <div class="form">
+                <div class="main__section--contact">
+                    <form action="" method="get" enctype="application/x-www-form-urlencoded" class="main__section--contactForm">
+                        <h2 class="main__section--contactData--FormTitulo">Escribinos</h2>
+                        <!--campo de nombre-->
+                        <input type="text" name="nombre" id="camponombre" placeholder="Nombre completo" required>
+                        <!--campo de contacto-->
+                        <input type="tel" name="telefono" id="campotelefono" placeholder="Telefono" required>
+                        <!--campo de email-->
+                        <input type="email" name="email" id="campoemail" placeholder="Escribe tu email" required>
+                        <!-- Area de texto -->
+                        <textarea id="comentario" name="areatexto" rows="15" cols="50"></textarea>
+                        <!-- Boton de enviar y reset -->
+                        <div class="main__section--contactForm__buttons">
+                            <button type="submit" value="Enviar" class="button__send">Enviar</button>
+                            <button type="reset" value="Reset" class="button__reset">Reset</button>
+                        </div>
 
-                </form>     
+                    </form>     
+                </div>
             </div>
         </section>
     </main>
