@@ -1,0 +1,19 @@
+{
+  "name": "huerta-del-tomate-proyecto-final",
+  "version": "1.0.0",
+  "description": "Proyecto final, huerta del tomate, coder house",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamaraantonella/pf-huerta-del-tomate.git"
+  },
+  "author": "Tamara Antonella Frazzetta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tamaraantonella/pf-huerta-del-tomate/issues"
+  },
+  "homepage": "https://github.com/tamaraantonella/pf-huerta-del-tomate#readme"
+}
