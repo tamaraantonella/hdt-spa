@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- hoja de estilos -->
-    <link rel="stylesheet" href="css/style.css">
+   
     <!-- fuente de tipografía -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,106 +20,80 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+     <!-- hoja de estilos -->
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/estilosSass.css">
     <title>Huerta del tomate</title>
 
 </head>
 <body>
     <!-- encabezado -->
     <header>
-        <div class="header__logo d-flex align-items-center">
-            <div class="p-3">
-                <a href="index.html"><img src="img/tomato-svgrepo-com.svg" alt="logo"></a>
+        <div class="header__logo">
+            <div>
+                <a href="index.html"><img src="img/deltomate-logo.png" alt="logo"></a>
             </div>
-            <div  style="font-size: 1rem; color: white;">
-              <p>Huerta Del Tomate</p>
-            </div>
-        </div>  
-        <label for="menu" class="header__burguerMenu">
+            
+            
+        </div> 
+        
+        <!-- <label for="menu" class="header__burguerMenu">
             <i class="fa-solid fa-bars"></i>
-        </label>
-        <input type="checkbox" id="menu">
-        <nav class="header__nav">
-            <label for="menu" class="header__closeMenu">
+        </label> -->
+        <!-- <input type="checkbox" id="menu"> -->
+        <nav class="header__nav p-2">
+            <!-- <label for="menu" class="header__closeMenu">
                 <i class="fa-solid fa-circle-xmark"></i>
-            </label>
-            <ul class="header__navMenu">
-                <li><a href="https://www.instagram.com/deltomate2021/"><i class="fab fa-instagram" aria-hidden="true"></i></li>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/aboutus.html">Nosotras</a></li>
-                <li><a href="pages/productos.html">Productos</a></li>
-                <li><a href="pages/tips.html">Tips</a></li>
-                <li><a href="pages/contact.html">Contactanos</a></li>
-            </ul>
+            </label> -->
+              
+            <a href="index.html">Inicio</a>
+            <a href="pages/aboutus.html">Nosotras</a>
+            <a href="pages/productos.html">Productos</a>
+            <a href="pages/tips.html">Tips</a>
+            <a href="pages/contact.html">Contactanos</a>
+        
         </nav>
        
     </header>
-    <main class="main">
+    <main class="index__main">
  
         <!-- ++++++++++++++++ BANNER +++++++++++++++++++-->
-        <section class="container-fluid main__banner animate__animated animate__backInDown">
-            <h1 class="p-5">Huerta orgánica y agroecológica</h1>
-            <div class="main__bannerLink">
-                <a href="pages/productos.html">NUESTRAS VARIEDADES</a>
-            </div>
+        <section class="main__banner animate__animated animate__backInDown">
+            <div class="main__banner--container">
+                <div>
+                    <h1>Huerta orgánica y agroecológica</h1>
+                </div>
+                <div class="main__bannerLink">
+                    <a href="https://www.instagram.com/deltomate2021/">Seguinos en instagram</a>
+                </div>
+            </div>  
         </section>
-            <!-- fotos -->
-        <div class="container-fluid">
-            <div class="row mx-auto align-items-center ">
-                <div class="col-lg-6 col-sm-12 p-0">
-                    <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                        <div class="carousel-item active" >
-                        <img src="img/buey.jpeg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item" >
-                        <img src="img/buey2.jpeg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item" >
-                        <img src="img/buey3.jpeg" class="d-block w-100" alt="...">
-                        </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                        </button>
-                        </div>
-                </div>
-
-                <div class="col-lg-6 col-sm-12 text-center index--bolsones h-100">
-                    <h1 class="main__textBoxTitulo">Bolsones agroecológicos</h1>
-                    <p>Incluyen verduras de la estación, van variando de acuerdo a la cosecha</p>
-                    <p>Todas las semanas tomamos pedidos previamente para una mejor organización.</p>
-                    <p>Para agilizar podes hacer tu pedido por whatsapp. <br><em>Se retira en el campo.</em> </p>
-                    <p>¡No te olvides de traer caja o bolsa para tus verduras!</p>
-                    
-                </div>
-            </div>
+        <!-- BOLSONES AGROECOLOGICOS -->
+        <div class="main__bolsones">
+            <h2>
+                BOLSONES AGROECOLÓGICOS
+            </h2>
+            <p>incluyen verduras de la estación, van variando de acuerdo a la cosecha. <br>
+            Todas las semanas tomamos pedidos por whatsapp previamente para una 
+            mejor organización. <br>
+            Se retira en el campo, PODER VER LA UBICACIÓN <a href="pages/contact.html">ACÁ</a>.<br></p>
+            <h3>¡No te olvides de traer caja o bolsa para tus verduras!
+            </h3>
         </div>
-        <!-- texto -->
-        <div class="container-fluid">
-            <div class="row mx-auto my-5 ">
-                <div class="col-sm-12 col-lg-4">
-                    <div class="p-3 border bg-light main__textBox">
-                        <p class="main__textBoxTitulo"><a href="pages/contact.html">Visitanos</a> </p>
-                        <p>Podes encontrarnos en Belén de Escobar, Partido de Escobar, Buenos Aires.</p>
-                        <p> J. Mermoz norte 2433 Escobar</p>
-                    </div>
+        <!-- CUADROS DE TEXTO -->
+        <div class="main__boxes">
+            <div class="boxes__container">
+                <div class="boxes__container--box">
+                    <h3><a href="pages/contact.html">Visitanos</a></h3>
+                    <p>Podes encontrar nuestra huerta en la ciudad de Belén de Escobar, Partido de Escobar, Buenos Aires. <br> J. Mermoz norte 2433</p>
                 </div>
-                <div class="col-sm-12 col-lg-4">
-                    <div class="p-3 border bg-light main__textBox">
-                        <p class="main__textBoxTitulo">Proyectos</p>
-                        <p>Unimos trabajo con profesionales del INTA, con colaboradores de cooperativas y con pymes de cosmética natural</p>
-                    </div>
+                <div class="boxes__container--box">
+                    <h3>Proyectos</h3>
+                    <p>Unimos trabajo con profesionales del INTA, trabajos en común con cooperativas de la zona y con pymes de cosmética natural.</p>
                 </div>
-                <div class="col-sm-12 col-lg-4">
-                    <div class="p-3 border bg-light main__textBox">
-                        <p class="main__textBoxTitulo">Saludable y ecofriendly</p>
-                        <p>Impacto positivo, orgánico, agroecológico, libre de agrotóxicos, así es nuestro proyecto. Es importante destacar que los alimentos sin agroquímicos se distinguen por su color, sabor y textura</p>
-                    </div>
+                <div class="boxes__container--box">
+                    <h3>Saludable y ecofriendly</h3>
+                    <p>Impacto positivo, orgánico, agroecológico, libre de agrotóxicos, así es nuestro proyecto. Es importante destacar que los alimentos sin agroquímicos se distinguen por su color, sabor y textura</p>
                 </div>
             </div>
         </div>
@@ -130,22 +103,17 @@
     <!-- footer -->
     <footer>
         <nav class="footer__ContainerMenu">
-            <ul class="footer__ContainerMenu--Lista">
-                <li class="footer__ContainerMenu--ListaItem"><a href="index.html">Inicio</a></li>
-                <li class="footer__ContainerMenu--ListaItem"><a href="pages/aboutus.html">Nosotras</a></li>
-                <li class="footer__ContainerMenu--ListaItem"><a href="pages/productos.html">Productos</a></li>
-                <li class="footer__ContainerMenu--ListaItem"><a href="pages/tips.html">Tips</a></li>
-                <li class="footer__ContainerMenu--ListaItem"><a href="pages/contact.html">Contacto</a></li>
-            </ul>
+            <a href="index.html">Inicio</a>
+            <a href="pages/aboutus.html">Nosotras</a>
+            <a href="pages/productos.html">Productos</a>
+            <a href="pages/tips.html">Tips</a>
+            <a href="pages/contact.html">Contacto</a>
         </nav>
         <div class="footer__redes">
-            <ul class="footer__redesMenu">
-                <li class="footer__redesMenu__item"><a href="https://www.instagram.com/deltomate2021/" title="Acesso directo a nuestra pagina de Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                <li class="footer__redesMenu__item"><a href="#" title="Acceso directo a nuestra pagina de facebook"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
-                <li class="footer__redesMenu__item"><a href="http://wa.link/0435k6"><i class="fa-brands fa-whatsapp"></i></a></li>
-            </ul>
-        </div>
-        
+            <a href="https://www.instagram.com/deltomate2021/" title="Acesso directo a nuestra pagina de Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" title="Acceso directo a nuestra pagina de facebook"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+            <a href="http://wa.link/0435k6"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>     
         <div class="footer__Copyright">
             <p>&copy; Todos los derechos reservados</p>
         </div>

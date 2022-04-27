@@ -1,0 +1,47 @@
+.container--productos{
+    .productos-title {
+        color:$colorPrincipal;
+        box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.2);
+        margin-bottom: 10px;
+        h2{
+            font-family: 'Amatic SC', cursive;
+        }
+        p{
+            transition: all 1s ease-in-out;
+            &:hover{
+                background-color: $colorNaranja !important; 
+                transform: scale(1.4) !important;
+            }
+            a{
+                color: $colorPrincipal;
+                text-decoration: none;
+                transition: all 1s ease-in-out;
+                &:hover{
+                    transform: scale(1.4) !important;
+                    color: white;
+                }
+            }
+        }
+    }
+    .filas{
+        div{
+            div{
+                .productos--boxtitle{
+                    font-family: 'Amatic SC', cursive;
+                    background-color: $colorMultiuso;
+                    color: white;
+                    padding: 1rem;
+                    width: 100%;
+                    text-align: center;
+                }
+                div{
+                    ul{
+                        li{
+                            list-style: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

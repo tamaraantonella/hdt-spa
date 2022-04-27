@@ -1,0 +1,26 @@
+.main__aboutus{
+    .main__aboutus--div{
+        div{
+            h2{
+                font-family: 'Amatic SC', cursive;
+                color: $colorPrincipal;
+            }
+            .imgs{
+                img{
+                    width: 100%;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+        .main__aboutusContainer{
+            h1{
+                text-align: center;
+                font-family: 'Amatic SC', cursive;
+                color: $colorPrincipal;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import "variables";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1{
+    font-family: 'Amatic SC', cursive;
+}
+
+
+@import "header";
+@import "footer";
+@import "index";
+@import "aboutus";
+@import "contact";
+@import "productos";
+@import "tips";
+
+
