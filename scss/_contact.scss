@@ -100,11 +100,20 @@
                 margin-bottom: 1rem;
                 background-color: $colorNaranja;
                 color: white;
+                padding: 1rem;
+                h4{
+                    font-family: 'Gafata', sans-serif;
+                }
+                p{
+                    font-family: 'Gafata', sans-serif;
+                }
             }
             .main__contactSection--ubicacion{
                 color: $colorPrincipal;
                 font-weight: 500;
-                
+                h4{
+                    font-family: 'Gafata', sans-serif;
+                }
                 iframe{
                     width: 80%;
                     height: 60%;

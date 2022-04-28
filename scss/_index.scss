@@ -18,7 +18,7 @@
                 text-align: center;
                 h1{
                     background-color: rgba(62, 124, 23, 0.8);
-                    font-size: 40px;
+                    font-size: 3rem;
                     color: white;
                 }
                 a{
@@ -32,6 +32,8 @@
                     margin-top: 2rem;
                     text-transform: uppercase;
                     transition: all 1s ease-in-out;
+                    font-family: 'Gafata', sans-serif;
+                    font-size: 1.2rem;
                     &:hover{
                         transform: scale(1.2);
                     }
@@ -45,7 +47,7 @@
         justify-content: space-around;
         align-items: center;
         height:fit-content;
-        max-height: 350px;
+        max-height: 450px;
         width: 100%;
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -55,21 +57,23 @@
         h2{
             font-family: 'Amatic SC', cursive;
             color: $colorPrincipal;
+            font-size: 2rem;
         }
         p{
             color: $colorPrincipal;
-            text-transform: uppercase;
-            font-family: 'Amatic SC', cursive;
-            width: 80%;
+            font-family: 'Gafata', sans-serif;
+            width: 90%;
             margin: auto;
+            font-size: 1rem;
             a{
                 color: $colorPrincipal;
-                font-family: 'Amatic SC', cursive;
+                font-family: 'Gafata', sans-serif;
             }
         }
-        h3{
+        h4{
             color: $colorNaranja;
-            font-family: 'Amatic SC', cursive;
+            font-family: 'Gafata', sans-serif;
+            text-transform: uppercase;
         }
     }
     .main__boxes{
@@ -85,11 +89,12 @@
                 background-color: rgba(241, 95, 13, 0.8);
                 color: white;
                 margin-bottom: 10px;
-                height: 200px;
+                height: 300px;
                 text-align: center;
                 padding: 1rem;
                 h3{
                     font-family: 'Amatic SC', cursive;
+                    font-size: 2.5rem;
                     a{
                         text-decoration: none;
                         color: white;
@@ -97,8 +102,10 @@
                     }
                 }
                 p{
-                    width: 95%;
+                    width: 100%;
                     margin: auto;
+                    font-family: 'Gafata', sans-serif;
+                    font-size: larger;
                 }
             }
         }
@@ -134,26 +141,19 @@
             padding: 1rem;
             
             h2{
-                font-family: 'Amatic SC', cursive;
                 color: $colorPrincipal;
-                font-size: 3rem;
+                font-size: 4rem;
             }
             p{
                 color: $colorPrincipal;
-                text-transform: uppercase;
-                font-family: 'Amatic SC', cursive;
                 width: 80%;
                 margin: auto;
                 font-size: 2rem;
                 a{
                     color: $colorPrincipal;
-                    font-family: 'Amatic SC', cursive;
                 }
             }
-            h3{
-                color: $colorNaranja;
-                font-family: 'Amatic SC', cursive;
-            }
+            
         }
         .main__boxes{
             .boxes__container{
@@ -165,11 +165,11 @@
 
                 .boxes__container--box{
                     width: 30%;
-                    height: 200px;
                     text-align: center;
                     p{
                         width: 90%;
                         margin: auto;
+                        font-size: 1.5rem;
 
                     }
                 }

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Gafata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
 * {
   margin: 0;
@@ -107,7 +108,7 @@ footer {
       text-align: center; }
       .index__main .main__banner .main__banner--container div h1 {
         background-color: rgba(62, 124, 23, 0.8);
-        font-size: 40px;
+        font-size: 3rem;
         color: white; }
       .index__main .main__banner .main__banner--container div a {
         text-decoration: none;
@@ -119,7 +120,9 @@ footer {
         margin: auto;
         margin-top: 2rem;
         text-transform: uppercase;
-        transition: all 1s ease-in-out; }
+        transition: all 1s ease-in-out;
+        font-family: 'Gafata', sans-serif;
+        font-size: 1.2rem; }
         .index__main .main__banner .main__banner--container div a:hover {
           transform: scale(1.2); }
 
@@ -129,7 +132,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   height: fit-content;
-  max-height: 350px;
+  max-height: 450px;
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -137,19 +140,21 @@ footer {
   text-align: center; }
   .index__main .main__bolsones h2 {
     font-family: 'Amatic SC', cursive;
-    color: #3e7c17; }
+    color: #3e7c17;
+    font-size: 2rem; }
   .index__main .main__bolsones p {
     color: #3e7c17;
-    text-transform: uppercase;
-    font-family: 'Amatic SC', cursive;
-    width: 80%;
-    margin: auto; }
+    font-family: 'Gafata', sans-serif;
+    width: 90%;
+    margin: auto;
+    font-size: 1rem; }
     .index__main .main__bolsones p a {
       color: #3e7c17;
-      font-family: 'Amatic SC', cursive; }
-  .index__main .main__bolsones h3 {
+      font-family: 'Gafata', sans-serif; }
+  .index__main .main__bolsones h4 {
     color: #F15F0D;
-    font-family: 'Amatic SC', cursive; }
+    font-family: 'Gafata', sans-serif;
+    text-transform: uppercase; }
 
 .index__main .main__boxes .boxes__container {
   display: flex;
@@ -163,18 +168,21 @@ footer {
     background-color: rgba(241, 95, 13, 0.8);
     color: white;
     margin-bottom: 10px;
-    height: 200px;
+    height: 300px;
     text-align: center;
     padding: 1rem; }
     .index__main .main__boxes .boxes__container .boxes__container--box h3 {
-      font-family: 'Amatic SC', cursive; }
+      font-family: 'Amatic SC', cursive;
+      font-size: 2.5rem; }
       .index__main .main__boxes .boxes__container .boxes__container--box h3 a {
         text-decoration: none;
         color: white;
         font-family: 'Amatic SC', cursive; }
     .index__main .main__boxes .boxes__container .boxes__container--box p {
-      width: 95%;
-      margin: auto; }
+      width: 100%;
+      margin: auto;
+      font-family: 'Gafata', sans-serif;
+      font-size: larger; }
 
 @media screen and (min-width: 768px) {
   .index__main .main__banner {
@@ -196,22 +204,15 @@ footer {
     text-align: center;
     padding: 1rem; }
     .index__main .main__bolsones h2 {
-      font-family: 'Amatic SC', cursive;
       color: #3e7c17;
-      font-size: 3rem; }
+      font-size: 4rem; }
     .index__main .main__bolsones p {
       color: #3e7c17;
-      text-transform: uppercase;
-      font-family: 'Amatic SC', cursive;
       width: 80%;
       margin: auto;
       font-size: 2rem; }
       .index__main .main__bolsones p a {
-        color: #3e7c17;
-        font-family: 'Amatic SC', cursive; }
-    .index__main .main__bolsones h3 {
-      color: #F15F0D;
-      font-family: 'Amatic SC', cursive; }
+        color: #3e7c17; }
   .index__main .main__boxes .boxes__container {
     display: flex;
     flex-direction: row;
@@ -220,11 +221,11 @@ footer {
     width: 100%; }
     .index__main .main__boxes .boxes__container .boxes__container--box {
       width: 30%;
-      height: 200px;
       text-align: center; }
       .index__main .main__boxes .boxes__container .boxes__container--box p {
         width: 90%;
-        margin: auto; } }
+        margin: auto;
+        font-size: 1.5rem; } }
 
 .main__aboutus .main__aboutus--div div h2 {
   font-family: 'Amatic SC', cursive;
@@ -240,7 +241,8 @@ footer {
   color: #3e7c17; }
 
 .main__aboutus .main__aboutus--div .main__aboutusContainer p {
-  text-align: center; }
+  text-align: center;
+  font-family: 'Gafata', sans-serif; }
 
 .main__contact .main__contactSection {
   display: flex;
@@ -322,10 +324,17 @@ footer {
     .main__contact .main__contactSection .main__section--contactData .main__contactSection--horarios {
       margin-bottom: 1rem;
       background-color: #F15F0D;
-      color: white; }
+      color: white;
+      padding: 1rem; }
+      .main__contact .main__contactSection .main__section--contactData .main__contactSection--horarios h4 {
+        font-family: 'Gafata', sans-serif; }
+      .main__contact .main__contactSection .main__section--contactData .main__contactSection--horarios p {
+        font-family: 'Gafata', sans-serif; }
     .main__contact .main__contactSection .main__section--contactData .main__contactSection--ubicacion {
       color: #3e7c17;
       font-weight: 500; }
+      .main__contact .main__contactSection .main__section--contactData .main__contactSection--ubicacion h4 {
+        font-family: 'Gafata', sans-serif; }
       .main__contact .main__contactSection .main__section--contactData .main__contactSection--ubicacion iframe {
         width: 80%;
         height: 60%; }
@@ -353,7 +362,8 @@ footer {
     .container--productos .productos-title p a {
       color: #3e7c17;
       text-decoration: none;
-      transition: all 1s ease-in-out; }
+      transition: all 1s ease-in-out;
+      font-family: 'Gafata', sans-serif; }
       .container--productos .productos-title p a:hover {
         transform: scale(1.4) !important;
         color: white; }
@@ -367,7 +377,8 @@ footer {
   text-align: center; }
 
 .container--productos .filas div div div ul li {
-  list-style: none; }
+  list-style: none;
+  font-family: 'Gafata', sans-serif; }
 
 .main__tips .tipsArticle {
   text-align: center; }
@@ -390,6 +401,8 @@ footer {
     margin: 20px 0px;
     padding: 10px;
     background-color: #E7E5DC; }
+    .main__tips .tipsMain div p {
+      font-family: 'Gafata', sans-serif; }
 
 @media screen and (min-width: 768px) {
   .main__tips .tipsMain {
