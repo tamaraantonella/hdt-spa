@@ -1,15 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Gafata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  font-family: 'Source Sans Pro', sans-serif; }
-
-h1 {
-  font-family: 'Amatic SC', cursive; }
-
 header {
   display: flex;
   flex-direction: column;
@@ -170,7 +160,10 @@ footer {
     margin-bottom: 10px;
     height: 300px;
     text-align: center;
-    padding: 1rem; }
+    padding: 1rem;
+    transition: all 1s ease-in-out; }
+    .index__main .main__boxes .boxes__container .boxes__container--box:hover {
+      transform: scale(1.1); }
     .index__main .main__boxes .boxes__container .boxes__container--box h3 {
       font-family: 'Amatic SC', cursive;
       font-size: 2.5rem; }
@@ -412,3 +405,13 @@ footer {
     align-items: center;
     margin: 20px;
     text-align: center; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+h1 {
+  font-family: 'Amatic SC', cursive; }

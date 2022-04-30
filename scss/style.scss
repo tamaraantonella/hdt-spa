@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Gafata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 @import "variables";
+@import "header";
+@import "footer";
+@import "index";
+@import "aboutus";
+@import "contact";
+@import "productos";
+@import "tips";
+@import "operaciones";
+@import "condicionales";
 *{
     margin: 0;
     padding: 0;
@@ -13,12 +22,5 @@ h1{
 }
 
 
-@import "header";
-@import "footer";
-@import "index";
-@import "aboutus";
-@import "contact";
-@import "productos";
-@import "tips";
 
 
