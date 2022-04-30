@@ -214,7 +214,8 @@ footer {
     width: 100%; }
     .index__main .main__boxes .boxes__container .boxes__container--box {
       width: 30%;
-      text-align: center; }
+      text-align: center;
+      height: 350px; }
       .index__main .main__boxes .boxes__container .boxes__container--box p {
         width: 90%;
         margin: auto;
