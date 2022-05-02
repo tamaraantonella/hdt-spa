@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Gafata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
-@import "variables";
-@import "header";
-@import "footer";
-@import "index";
-@import "aboutus";
-@import "contact";
-@import "productos";
-@import "tips";
-@import "operaciones";
-@import "condicionales";
+@import "utilities/variables";
+@import "utilities/maps";
+@import "utilities/mixins";
+@import "utilities/extend";
+@import "layout/header";
+@import "layout/footer";
+@import "pages/index";
+@import "pages/aboutus";
+@import "pages/contact";
+@import "pages/productos";
+@import "pages/tips";
+
+
 *{
     margin: 0;
     padding: 0;

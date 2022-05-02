@@ -4,7 +4,7 @@
         box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.2);
         margin-bottom: 10px;
         h2{
-            font-family: 'Amatic SC', cursive;
+            @include titles;
         }
         p{
             transition: all 1s ease-in-out;

@@ -1,0 +1,26 @@
+//Extend aplicado a la pagina Tips. 
+.box__title{
+    width: 100%;
+    background-color: map-get($colors, verdeP );
+    text-transform: uppercase;
+    color: map-get($colors, light );
+    font-size: larger;
+    font-family: 'Amatic SC', cursive;
+    padding: 1rem;
+    text-align: center;
+}
+
+.box__title2{
+    @extend .box__title;
+    background-color: map-get($colors, naranja );
+}
+
+.box__title3{
+    @extend .box__title;
+    background-color: map-get($colors, marron );
+}
+
+.box__title4{
+    @extend .box__title;
+    background-color: map-get($colors, dirt );
+}

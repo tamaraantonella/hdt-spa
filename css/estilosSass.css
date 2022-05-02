@@ -1,5 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Gafata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+.box__title, .box__title2, .box__title3, .box__title4 {
+  width: 100%;
+  background-color: #3e7c17;
+  text-transform: uppercase;
+  color: #e7e5dc;
+  font-size: larger;
+  font-family: 'Amatic SC', cursive;
+  padding: 1rem;
+  text-align: center; }
+
+.box__title2 {
+  background-color: #F15F0D; }
+
+.box__title3 {
+  background-color: #ac6349; }
+
+.box__title4 {
+  background-color: #683c2c; }
+
 header {
   display: flex;
   flex-direction: column;
@@ -89,18 +108,18 @@ footer {
   background-size: cover;
   background-position: center;
   box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.5); }
-  .index__main .main__banner .main__banner--container {
+  .index__main .main__banner--container {
     display: flex;
     height: 100%;
     flex-direction: column;
     justify-content: center; }
-    .index__main .main__banner .main__banner--container div {
+    .index__main .main__banner--container div {
       text-align: center; }
-      .index__main .main__banner .main__banner--container div h1 {
+      .index__main .main__banner--container div h1 {
         background-color: rgba(62, 124, 23, 0.8);
         font-size: 3rem;
         color: white; }
-      .index__main .main__banner .main__banner--container div a {
+      .index__main .main__banner--container div a {
         text-decoration: none;
         color: white;
         background-color: rgba(241, 95, 13, 0.8);
@@ -113,7 +132,7 @@ footer {
         transition: all 1s ease-in-out;
         font-family: 'Gafata', sans-serif;
         font-size: 1.2rem; }
-        .index__main .main__banner .main__banner--container div a:hover {
+        .index__main .main__banner--container div a:hover {
           transform: scale(1.2); }
 
 .index__main .main__bolsones {
@@ -150,7 +169,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 100%; }
-  .index__main .main__boxes .boxes__container .boxes__container--box {
+  .index__main .main__boxes .boxes__container--box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,20 +177,20 @@ footer {
     background-color: rgba(241, 95, 13, 0.8);
     color: white;
     margin-bottom: 10px;
-    height: 300px;
+    height: 350px;
     text-align: center;
     padding: 1rem;
     transition: all 1s ease-in-out; }
-    .index__main .main__boxes .boxes__container .boxes__container--box:hover {
+    .index__main .main__boxes .boxes__container--box:hover {
       transform: scale(1.1); }
-    .index__main .main__boxes .boxes__container .boxes__container--box h3 {
+    .index__main .main__boxes .boxes__container--box h3 {
       font-family: 'Amatic SC', cursive;
       font-size: 2.5rem; }
-      .index__main .main__boxes .boxes__container .boxes__container--box h3 a {
+      .index__main .main__boxes .boxes__container--box h3 a {
         text-decoration: none;
         color: white;
         font-family: 'Amatic SC', cursive; }
-    .index__main .main__boxes .boxes__container .boxes__container--box p {
+    .index__main .main__boxes .boxes__container--box p {
       width: 100%;
       margin: auto;
       font-family: 'Gafata', sans-serif;
@@ -232,7 +251,8 @@ footer {
 .main__aboutus .main__aboutus--div .main__aboutusContainer h1 {
   text-align: center;
   font-family: 'Amatic SC', cursive;
-  color: #3e7c17; }
+  color: #3e7c17;
+  font-size: 2rem; }
 
 .main__aboutus .main__aboutus--div .main__aboutusContainer p {
   text-align: center;
@@ -347,7 +367,10 @@ footer {
   box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px; }
   .container--productos .productos-title h2 {
-    font-family: 'Amatic SC', cursive; }
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    color: #3e7c17;
+    font-size: 2rem; }
   .container--productos .productos-title p {
     transition: all 1s ease-in-out; }
     .container--productos .productos-title p:hover {
@@ -375,37 +398,42 @@ footer {
   font-family: 'Gafata', sans-serif; }
 
 .main__tips .tipsArticle {
+  padding: 10px;
   text-align: center; }
   .main__tips .tipsArticle h2 {
-    color: #3e7c17;
+    text-align: center;
     font-family: 'Amatic SC', cursive;
-    font-size: 2rem;
-    margin-top: 10px; }
+    color: #3e7c17;
+    font-size: 2rem; }
 
-.main__tips .tipsMain {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center;
-  grid-column-gap: 20px;
-  align-items: baseline;
-  margin-bottom: 20px;
-  text-align: center; }
-  .main__tips .tipsMain div {
-    box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
-    margin: 20px 0px;
-    padding: 10px;
-    background-color: #E7E5DC; }
-    .main__tips .tipsMain div p {
-      font-family: 'Gafata', sans-serif; }
+.main__tips .main__tips--block {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  height: auto;
+  margin-bottom: 1rem; }
+  .main__tips .main__tips--block__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E7E5DC;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 10px; }
+    .main__tips .main__tips--block__box .box__cards {
+      padding: 0.5rem; }
+      .main__tips .main__tips--block__box .box__cards div p {
+        text-align: center; }
 
 @media screen and (min-width: 768px) {
-  .main__tips .tipsMain {
-    display: grid;
-    grid-template-columns: repeat(3, 0.5fr);
-    grid-column-gap: 20px;
-    align-items: center;
-    margin: 20px;
-    text-align: center; } }
+  .main__tips .main__tips--block {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 95%; }
+    .main__tips .main__tips--block__box {
+      margin-right: 10px;
+      margin-left: 10px; } }
 
 * {
   margin: 0;

@@ -14,9 +14,7 @@
         }
         .main__aboutusContainer{
             h1{
-                text-align: center;
-                font-family: 'Amatic SC', cursive;
-                color: $colorPrincipal;
+                @include titles;
             }
             p{
                 text-align: center;
