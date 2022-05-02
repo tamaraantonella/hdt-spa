@@ -37,10 +37,37 @@
                     text-align: center;
                 }
                 div{
+                    .carousel-item{
+                        height: 200px;
+                        img{
+                            object-fit: cover;
+                            width: 100%;
+                        }
+                    }
+                    
+                }
+                div{
                     ul{
+                        margin: auto;
                         li{
+                            text-align: center;
                             list-style: none;
                             font-family: 'Gafata', sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:768px){
+    .container--productos{
+        .filas{
+            div{
+                div{
+                    div{
+                        .carousel-item{
+                            height: 250px;
                         }
                     }
                 }

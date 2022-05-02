@@ -393,9 +393,22 @@ footer {
   width: 100%;
   text-align: center; }
 
-.container--productos .filas div div div ul li {
-  list-style: none;
-  font-family: 'Gafata', sans-serif; }
+.container--productos .filas div div div .carousel-item {
+  height: 200px; }
+  .container--productos .filas div div div .carousel-item img {
+    object-fit: cover;
+    width: 100%; }
+
+.container--productos .filas div div div ul {
+  margin: auto; }
+  .container--productos .filas div div div ul li {
+    text-align: center;
+    list-style: none;
+    font-family: 'Gafata', sans-serif; }
+
+@media screen and (min-width: 768px) {
+  .container--productos .filas div div div .carousel-item {
+    height: 250px; } }
 
 .main__tips .tipsArticle {
   padding: 10px;
