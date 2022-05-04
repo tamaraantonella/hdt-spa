@@ -374,22 +374,22 @@ footer {
   .container--productos .productos-title p {
     transition: all 1s ease-in-out; }
     .container--productos .productos-title p:hover {
-      background-color: #F15F0D !important;
-      transform: scale(1.4) !important; }
+      transform: scale(1.4); }
     .container--productos .productos-title p a {
       color: #3e7c17;
       text-decoration: none;
       transition: all 1s ease-in-out;
-      font-family: 'Gafata', sans-serif; }
+      font-family: 'Gafata', sans-serif;
+      padding: 0.5rem; }
       .container--productos .productos-title p a:hover {
-        transform: scale(1.4) !important;
+        background-color: #F15F0D;
+        transform: scale(1.4);
         color: white; }
 
 .container--productos .filas div div .productos--boxtitle {
   font-family: 'Amatic SC', cursive;
   background-color: #ac6349;
   color: white;
-  padding: 1rem;
   width: 100%;
   text-align: center; }
 
@@ -399,12 +399,15 @@ footer {
     object-fit: cover;
     width: 100%; }
 
-.container--productos .filas div div div ul {
-  margin: auto; }
-  .container--productos .filas div div div ul li {
+.container--productos .filas div div .filas__listas ul {
+  margin: 0px;
+  padding: 0px; }
+  .container--productos .filas div div .filas__listas ul li {
     text-align: center;
     list-style: none;
-    font-family: 'Gafata', sans-serif; }
+    font-family: 'Gafata', sans-serif;
+    margin: 0px;
+    padding: 0px; }
 
 @media screen and (min-width: 768px) {
   .container--productos .filas div div div .carousel-item {
