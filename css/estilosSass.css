@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Gafata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Englebert&display=swap");
 .box__title, .box__title2, .box__title3, .box__title4 {
   width: 100%;
   background-color: #3e7c17;
@@ -40,9 +41,8 @@ header {
     header .header__nav a {
       text-decoration: none;
       text-transform: uppercase;
-      font-family: 'Amatic SC', cursive;
-      color: #3e7c17;
-      font-weight: 900; }
+      font-family: 'Englebert', sans-serif;
+      color: #3e7c17; }
 
 @media screen and (min-width: 768px) {
   header {
@@ -54,8 +54,8 @@ header {
       header .header__nav a {
         text-decoration: none;
         text-transform: uppercase;
-        font-family: 'Amatic SC', cursive;
-        font-size: 2rem;
+        font-family: 'Englebert', sans-serif;
+        font-size: 1.5rem;
         transition: all 0.5s ease-in-out; }
         header .header__nav a:hover {
           color: #F15F0D;
@@ -78,7 +78,7 @@ footer {
       text-decoration: none;
       color: #3e7c17;
       display: inline-block;
-      font-family: 'Amatic SC', cursive;
+      font-family: 'Englebert', sans-serif;
       font-size: 1.2rem;
       transition: all 1s ease-in-out; }
       footer .footer__ContainerMenu a:hover {
@@ -140,13 +140,13 @@ footer {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: fit-content;
-  max-height: 450px;
+  height: 350px;
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 1rem;
   background-color: #E7E5DC;
-  text-align: center; }
+  text-align: center;
+  padding: 1rem; }
   .index__main .main__bolsones h2 {
     font-family: 'Amatic SC', cursive;
     color: #3e7c17;
@@ -170,6 +170,7 @@ footer {
   flex-direction: column;
   width: 100%; }
   .index__main .main__boxes .boxes__container--box {
+    box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -194,7 +195,7 @@ footer {
       width: 100%;
       margin: auto;
       font-family: 'Gafata', sans-serif;
-      font-size: larger; }
+      font-size: 2rem; }
 
 @media screen and (min-width: 768px) {
   .index__main .main__banner {
@@ -204,22 +205,11 @@ footer {
       font-size: 5rem;
       color: white; }
   .index__main .main__bolsones {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 400px;
-    width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    background-color: #E7E5DC;
-    text-align: center;
-    padding: 1rem; }
+    height: fit-content;
+    max-height: 500px; }
     .index__main .main__bolsones h2 {
-      color: #3e7c17;
-      font-size: 4rem; }
+      font-size: 3rem; }
     .index__main .main__bolsones p {
-      color: #3e7c17;
       width: 80%;
       margin: auto;
       font-size: 2rem; }
@@ -234,11 +224,30 @@ footer {
     .index__main .main__boxes .boxes__container .boxes__container--box {
       width: 30%;
       text-align: center;
-      height: 350px; }
+      height: 400px; }
       .index__main .main__boxes .boxes__container .boxes__container--box p {
         width: 90%;
         margin: auto;
-        font-size: 1.5rem; } }
+        font-size: 1rem; } }
+
+@media screen and (min-width: 1024px) {
+  .index__main .main__banner .main__banner--container div h1 {
+    background-color: rgba(62, 124, 23, 0.8);
+    font-size: 5rem;
+    color: white; }
+  .index__main .main__bolsones {
+    height: 400px;
+    width: 100%; }
+    .index__main .main__bolsones h2 {
+      font-size: 4rem; }
+    .index__main .main__bolsones p {
+      width: 80%;
+      margin: auto;
+      font-size: 2rem; }
+  .index__main .main__boxes .boxes__container .boxes__container--box {
+    height: 300px; }
+    .index__main .main__boxes .boxes__container .boxes__container--box p {
+      font-size: 1.3rem; } }
 
 .main__aboutus .main__aboutus--div div h2 {
   font-family: 'Amatic SC', cursive;

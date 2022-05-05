@@ -46,14 +46,13 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        height:fit-content;
-        max-height: 450px;
+        height: 350px;
         width: 100%;
         margin-top: 1rem;
         margin-bottom: 1rem;
         background-color: $colorFondoHeader;
         text-align: center;
-        
+        padding: 1rem;
         h2{
             font-family: 'Amatic SC', cursive;
             color: $colorPrincipal;
@@ -82,6 +81,7 @@
             flex-direction: column;
             width: 100%;
             &--box{
+                box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.5);
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -109,14 +109,13 @@
                     width: 100%;
                     margin: auto;
                     font-family: 'Gafata', sans-serif;
-                    font-size: larger;
+                    font-size: 2rem;
                 }
             }
         }
 
     }
 }
-
 @media screen and (min-width:768px){
     .index__main{
         .main__banner{
@@ -132,24 +131,12 @@
             } 
         }
         .main__bolsones{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            height: 400px;
-            width: 100%;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            background-color: $colorFondoHeader;
-            text-align: center;
-            padding: 1rem;
-            
+            height: fit-content;
+            max-height: 500px;            
             h2{
-                color: $colorPrincipal;
-                font-size: 4rem;
+                font-size: 3rem;
             }
             p{
-                color: $colorPrincipal;
                 width: 80%;
                 margin: auto;
                 font-size: 2rem;
@@ -170,11 +157,54 @@
                 .boxes__container--box{
                     width: 30%;
                     text-align: center;
-                    height: 350px;
+                    height:400px;
                     p{
                         width: 90%;
                         margin: auto;
-                        font-size: 1.5rem;
+                        font-size: 1rem;
+
+                    }
+                }
+            }
+
+        }
+     }
+     
+}
+    
+
+@media screen and (min-width:1024px){
+    .index__main{
+        .main__banner{
+            .main__banner--container{
+                 div{
+                     h1{
+                         background-color: rgba(62, 124, 23, 0.8);
+                         font-size: 5rem;
+                         color: white;
+                    }
+                }    
+            } 
+        }
+        .main__bolsones{
+            height: 400px;
+            width: 100%;         
+            h2{
+                font-size: 4rem;
+            }
+            p{
+                width: 80%;
+                margin: auto;
+                font-size: 2rem;
+            }
+            
+        }
+        .main__boxes{
+            .boxes__container{
+                .boxes__container--box{
+                    height:300px;
+                    p{
+                        font-size: 1.3rem;
 
                     }
                 }
