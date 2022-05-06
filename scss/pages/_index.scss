@@ -89,7 +89,7 @@
                 background-color: rgba(241, 95, 13, 0.8);
                 color: white;
                 margin-bottom: 10px;
-                height: 350px;
+                height: fit-content;
                 text-align: center;
                 padding: 1rem;
                 transition: all 1s ease-in-out;
@@ -98,7 +98,7 @@
                 }
                 h3{
                     font-family: 'Amatic SC', cursive;
-                    font-size: 2.5rem;
+                    font-size: 2rem;
                     a{
                         text-decoration: none;
                         color: white;
@@ -109,7 +109,7 @@
                     width: 100%;
                     margin: auto;
                     font-family: 'Gafata', sans-serif;
-                    font-size: 2rem;
+                    font-size: 1rem;
                 }
             }
         }
