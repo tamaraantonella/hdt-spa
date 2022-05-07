@@ -413,7 +413,7 @@ footer {
   padding: 0px; }
   .container--productos .filas div div .filas__listas ul li {
     text-align: center;
-    list-style: none;
+    list-style-type: none;
     font-family: 'Gafata', sans-serif;
     margin: 0px;
     padding: 0px; }
