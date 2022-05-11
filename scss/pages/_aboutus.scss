@@ -23,3 +23,31 @@
         }
     }
 }
+@media screen and (min-width:768px)  {
+    .main__aboutus{
+        .main__aboutus--div{
+            div{
+                h2{
+                    font-family: 'Amatic SC', cursive;
+                    color: $colorPrincipal;
+                }
+                .imgs{
+                    img{
+                        width: 100%;
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+            .main__aboutusContainer{
+                h1{
+                    @include titles;
+                }
+                p{
+                    text-align: center;
+                    font-family: 'Gafata', sans-serif;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

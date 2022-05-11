@@ -269,6 +269,23 @@ footer {
   text-align: center;
   font-family: 'Gafata', sans-serif; }
 
+@media screen and (min-width: 768px) {
+  .main__aboutus .main__aboutus--div div h2 {
+    font-family: 'Amatic SC', cursive;
+    color: #3e7c17; }
+  .main__aboutus .main__aboutus--div div .imgs img {
+    width: 100%;
+    margin-bottom: 2rem; }
+  .main__aboutus .main__aboutus--div .main__aboutusContainer h1 {
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    color: #3e7c17;
+    font-size: 2rem; }
+  .main__aboutus .main__aboutus--div .main__aboutusContainer p {
+    text-align: center;
+    font-family: 'Gafata', sans-serif;
+    font-size: 1.2rem; } }
+
 .main__contact {
   margin: 40px auto; }
   .main__contact .main__contactSection {
@@ -361,6 +378,12 @@ footer {
         color: #3e7c17;
         font-weight: 500; }
         .main__contact .main__contactSection .main__section--contactData .main__contactSection--ubicacion h4 {
+          font-family: 'Amatic SC', cursive;
+          font-weight: bold;
+          font-size: 2rem; }
+        .main__contact .main__contactSection .main__section--contactData .main__contactSection--ubicacion p {
+          font-weight: bold;
+          font-size: 1rem;
           font-family: 'Gafata', sans-serif; }
         .main__contact .main__contactSection .main__section--contactData .main__contactSection--ubicacion iframe {
           width: 80%;
