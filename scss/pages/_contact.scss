@@ -1,4 +1,5 @@
 .main__contact{
+    margin:40px auto;
     .main__contactSection{
         display: flex;
         flex-direction: column;
@@ -21,7 +22,7 @@
                         text-align: center;
                         margin-bottom: 1rem;
                         font-family: 'Amatic SC', cursive;
-                        color:$colorPrincipal;
+                        color:map-get($colors, verdeP );
                         font-size: 2rem;
                         
                     }
@@ -80,8 +81,7 @@
             display: flex;
             flex-direction: column;
             .main__section--contactData__title{
-                font-family: 'Amatic SC', cursive;
-                color:$colorPrincipal;
+                color:map-get($colors, verdeP);
                 font-size: 2rem;
                 h2{
                     a{
@@ -98,11 +98,13 @@
             }
             .main__contactSection--horarios{
                 margin-bottom: 1rem;
-                background-color: $colorNaranja;
+                background-color: map-get($colors, naranja2 );
+                border-radius: 10px;
                 color: white;
                 padding: 1rem;
                 h4{
                     font-family: 'Gafata', sans-serif;
+
                 }
                 p{
                     font-family: 'Gafata', sans-serif;
@@ -128,6 +130,7 @@
             flex-direction: row;
             justify-content: space-evenly;
             margin: 20px auto;
+            align-items: flex-start;
             .main__section--contactData{
                 .main__contactSection--ubicacion{
                     iframe{
