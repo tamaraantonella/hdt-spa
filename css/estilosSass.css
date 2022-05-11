@@ -79,8 +79,8 @@ footer {
       color: #3e7c17;
       display: inline-block;
       font-family: 'Englebert', sans-serif;
-      font-size: 1.2rem;
-      transition: all 1s ease-in-out; }
+      transition: all 1s ease-in-out;
+      text-transform: uppercase; }
       footer .footer__ContainerMenu a:hover {
         transform: scale(1.3); }
   footer .footer__redes {

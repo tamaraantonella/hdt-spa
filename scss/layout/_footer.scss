@@ -15,8 +15,8 @@ footer{
                 color: $colorPrincipal;
                 display: inline-block;
                 font-family: 'Englebert', sans-serif;
-                font-size: 1.2rem;
                 transition: all 1s ease-in-out;
+                text-transform: uppercase;
                 &:hover{
                     transform: scale(1.3);
                 }
