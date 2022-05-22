@@ -2,15 +2,15 @@ footer{
     width: 100%;
     display: flex;
     flex-direction: column;
-
     .footer__ContainerMenu{ 
         display: flex;
         align-items: center;
         justify-content:space-evenly;
         width: 100%;
         background-color: $colorFondoHeader;
-        height: 60px;
+        height: 70px;
             a{
+                font-size: 18px;
                 text-decoration: none;
                 color: $colorPrincipal;
                 display: inline-block;
@@ -26,7 +26,7 @@ footer{
     }
     .footer__redes{
         display: flex;
-        width: 40%;
+        width: 60%;
         margin: auto;
         justify-content: space-around;
         a{
@@ -38,6 +38,8 @@ footer{
                 text-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.5);
                 transform: scale(1.2);
             }
+            font-size: 20px;
+            
         }
 
     
@@ -45,5 +47,14 @@ footer{
     .footer__Copyright{
         text-align: center;
         color: #8E9775;
+        p{
+            padding: 0;
+            margin:0;
+            a{
+                text-decoration: none;
+                text-align: center;
+                color: #8E9775;
+            }
+        }
     }
 }

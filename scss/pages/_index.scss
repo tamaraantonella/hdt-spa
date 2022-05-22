@@ -1,6 +1,18 @@
 // BANNER
 .index__main{
-    
+    .wp{
+        display: inline-block;
+        margin: 15px;
+        position:fixed;
+        bottom:0;
+        right:0;
+        color:map-get($colors, verdeP);
+        z-index:99999;
+        img{
+            object-fit: cover;
+            width: 30px;
+        }
+    }
    .main__banner{
         width: 100%;
         height: 300px;
@@ -43,19 +55,24 @@
             }    
         } 
     }
+    
     .main__bolsones{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
+        gap:20px;
         align-items: center;
-        height: 350px;
+        height: 100vh;
         width: 100%;
         margin-top: 1rem;
         margin-bottom: 1rem;
-        background-color: $colorFondoHeader;
+        background-image: url(../img/bgindex.svg);
+        background-position: center;
+        background-size: cover;
         text-align: center;
         padding: 1rem;
         h2{
+            margin-top: 30px;
             font-family: 'Amatic SC', cursive;
             color: $colorPrincipal;
             font-size: 2rem;
@@ -72,9 +89,26 @@
             }
         }
         h4{
-            color: $colorNaranja;
+            color: white;
             font-family: 'Gafata', sans-serif;
             text-transform: uppercase;
+        }
+        .main__conoce{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            p{
+                color: white;
+                font-family: 'Gafata', sans-serif;
+                margin:15px 0px;
+                text-transform: uppercase;
+            }
+            i{
+                color:white;
+            }
+    
         }
     }
     .main__boxes{
@@ -120,6 +154,11 @@
 }
 @media screen and (min-width:768px){
     .index__main{
+        .wp{
+            img{
+                width: 40px;
+            }
+        }
         .main__banner{
             height: 500px;
             .main__banner--container{
@@ -134,14 +173,15 @@
         }
         .main__bolsones{
             height: fit-content;
-            max-height: 500px;            
+            max-height: 700px;            
             h2{
                 font-size: 3rem;
+                margin-top: 5px;
             }
             p{
-                width: 80%;
-                margin: auto;
-                font-size: 2rem;
+                width: 85%;
+                font-size: 1.5rem;
+                margin-bottom: 10px;
                 a{
                     color: $colorPrincipal;
                 }
@@ -189,7 +229,7 @@
             } 
         }
         .main__bolsones{
-            height: 400px;
+            height: 700px;
             width: 100%;         
             h2{
                 font-size: 4rem;

@@ -73,8 +73,9 @@ footer {
     justify-content: space-evenly;
     width: 100%;
     background-color: #E7E5DC;
-    height: 60px; }
+    height: 70px; }
     footer .footer__ContainerMenu a {
+      font-size: 18px;
       text-decoration: none;
       color: #3e7c17;
       display: inline-block;
@@ -85,13 +86,14 @@ footer {
         transform: scale(1.3); }
   footer .footer__redes {
     display: flex;
-    width: 40%;
+    width: 60%;
     margin: auto;
     justify-content: space-around; }
     footer .footer__redes a {
       text-decoration: none;
       color: #4ea319;
-      transition: all 0.5s ease-in-out; }
+      transition: all 0.5s ease-in-out;
+      font-size: 20px; }
       footer .footer__redes a:hover {
         color: #E28F83;
         text-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.5);
@@ -99,6 +101,25 @@ footer {
   footer .footer__Copyright {
     text-align: center;
     color: #8E9775; }
+    footer .footer__Copyright p {
+      padding: 0;
+      margin: 0; }
+      footer .footer__Copyright p a {
+        text-decoration: none;
+        text-align: center;
+        color: #8E9775; }
+
+.index__main .wp {
+  display: inline-block;
+  margin: 15px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: #3e7c17;
+  z-index: 99999; }
+  .index__main .wp img {
+    object-fit: cover;
+    width: 30px; }
 
 .index__main .main__banner {
   width: 100%;
@@ -140,16 +161,20 @@ footer {
 .index__main .main__bolsones {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
   align-items: center;
-  height: 350px;
+  height: 100vh;
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  background-color: #E7E5DC;
+  background-image: url(../img/bgindex.svg);
+  background-position: center;
+  background-size: cover;
   text-align: center;
   padding: 1rem; }
   .index__main .main__bolsones h2 {
+    margin-top: 30px;
     font-family: 'Amatic SC', cursive;
     color: #3e7c17;
     font-size: 2rem; }
@@ -163,9 +188,22 @@ footer {
       color: #3e7c17;
       font-family: 'Gafata', sans-serif; }
   .index__main .main__bolsones h4 {
-    color: #F15F0D;
+    color: white;
     font-family: 'Gafata', sans-serif;
     text-transform: uppercase; }
+  .index__main .main__bolsones .main__conoce {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .index__main .main__bolsones .main__conoce p {
+      color: white;
+      font-family: 'Gafata', sans-serif;
+      margin: 15px 0px;
+      text-transform: uppercase; }
+    .index__main .main__bolsones .main__conoce i {
+      color: white; }
 
 .index__main .main__boxes .boxes__container {
   display: flex;
@@ -200,6 +238,8 @@ footer {
       font-size: 1rem; }
 
 @media screen and (min-width: 768px) {
+  .index__main .wp img {
+    width: 40px; }
   .index__main .main__banner {
     height: 500px; }
     .index__main .main__banner .main__banner--container div h1 {
@@ -208,13 +248,14 @@ footer {
       color: white; }
   .index__main .main__bolsones {
     height: fit-content;
-    max-height: 500px; }
+    max-height: 700px; }
     .index__main .main__bolsones h2 {
-      font-size: 3rem; }
+      font-size: 3rem;
+      margin-top: 5px; }
     .index__main .main__bolsones p {
-      width: 80%;
-      margin: auto;
-      font-size: 2rem; }
+      width: 85%;
+      font-size: 1.5rem;
+      margin-bottom: 10px; }
       .index__main .main__bolsones p a {
         color: #3e7c17; }
   .index__main .main__boxes .boxes__container {
@@ -238,7 +279,7 @@ footer {
     font-size: 7rem;
     color: white; }
   .index__main .main__bolsones {
-    height: 400px;
+    height: 700px;
     width: 100%; }
     .index__main .main__bolsones h2 {
       font-size: 4rem; }
