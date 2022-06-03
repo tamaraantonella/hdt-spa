@@ -1,3 +1,4 @@
+
 .container--productos{
     .productos-title {
         color:$colorPrincipal;
@@ -10,7 +11,6 @@
             transition: all 1s ease-in-out;
             
             &:hover{
-                 
                 transform: scale(1.4);
             }
             a{
@@ -27,37 +27,41 @@
             }
         }
     }
-    .filas{
-        div{
-            div{
-                .productos--boxtitle{
-                    font-family: 'Amatic SC', cursive;
-                    background-color: $colorMultiuso;
-                    color: white;
-                    width: 100%;
-                    text-align: center;
-                }
-                div{
-                    .carousel-item{
-                        height: 200px;
-                        img{
-                            object-fit: cover;
-                            width: 100%;
-                        }
+    .container--productos--section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        .boxes--products-title{
+            font-family: 'Amatic SC', cursive;
+            color: white;
+            width: 100%;
+            text-align: center;
+            font-size: 25px;
+        }
+        #box-tomate{
+            background-color: $colorMultiuso;
+        }
+        #box-pepinos{
+            background-color: $colorPrincipal;
+        }
+        .boxes-box{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .boxes--products{
+                .card{
+                    margin-bottom: 15px;
+                    img{
+                        width: 286px;
+                        height: 215px;
+                        object-fit: cover;
+                        object-position: center;
                     }
-                    
-                }
-                .filas__listas{
-                    ul{
-                        margin: 0px;
-	                    padding: 0px;
-                        li{
-                            text-align: center;
-                            list-style-type: none;
-                            font-family: 'Gafata', sans-serif;
-                            margin: 0px;
-	                        padding: 0px;
-                        }
+                    .card-header{
+                        font-weight: bolder;
+                        text-transform: capitalize;
                     }
                 }
             }
@@ -66,15 +70,32 @@
 }
 @media screen and (min-width:768px){
     .container--productos{
-        .filas{
-            div{
-                div{
-                    div{
-                        .carousel-item{
-                            height: 250px;
-                        }
-                    }
+        .container--productos--section{
+            .boxes-box{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                justify-content: center;
+                .boxes--products{
+                    margin: 0 auto;
                 }
+            }
+        }
+    }
+}
+@media screen and (min-width:992px){
+    .container--productos{
+        .container--productos--section{
+            .boxes-box{
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+    }
+}
+@media screen and (min-width:992px){
+    .container--productos{
+        .container--productos--section{
+            .boxes-box{
+                grid-template-columns: repeat(4,1fr);
             }
         }
     }

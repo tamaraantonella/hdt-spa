@@ -464,32 +464,52 @@ footer {
         transform: scale(1.4);
         color: white; }
 
-.container--productos .filas div div .productos--boxtitle {
-  font-family: 'Amatic SC', cursive;
-  background-color: #ac6349;
-  color: white;
-  width: 100%;
-  text-align: center; }
-
-.container--productos .filas div div div .carousel-item {
-  height: 200px; }
-  .container--productos .filas div div div .carousel-item img {
-    object-fit: cover;
-    width: 100%; }
-
-.container--productos .filas div div .filas__listas ul {
-  margin: 0px;
-  padding: 0px; }
-  .container--productos .filas div div .filas__listas ul li {
+.container--productos .container--productos--section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+  .container--productos .container--productos--section .boxes--products-title {
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    width: 100%;
     text-align: center;
-    list-style-type: none;
-    font-family: 'Gafata', sans-serif;
-    margin: 0px;
-    padding: 0px; }
+    font-size: 25px; }
+  .container--productos .container--productos--section #box-tomate {
+    background-color: #ac6349; }
+  .container--productos .container--productos--section #box-pepinos {
+    background-color: #3e7c17; }
+  .container--productos .container--productos--section .boxes-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .container--productos .container--productos--section .boxes-box .boxes--products .card {
+      margin-bottom: 15px; }
+      .container--productos .container--productos--section .boxes-box .boxes--products .card img {
+        width: 286px;
+        height: 215px;
+        object-fit: cover;
+        object-position: center; }
+      .container--productos .container--productos--section .boxes-box .boxes--products .card .card-header {
+        font-weight: bolder;
+        text-transform: capitalize; }
 
 @media screen and (min-width: 768px) {
-  .container--productos .filas div div div .carousel-item {
-    height: 250px; } }
+  .container--productos .container--productos--section .boxes-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center; }
+    .container--productos .container--productos--section .boxes-box .boxes--products {
+      margin: 0 auto; } }
+
+@media screen and (min-width: 992px) {
+  .container--productos .container--productos--section .boxes-box {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media screen and (min-width: 992px) {
+  .container--productos .container--productos--section .boxes-box {
+    grid-template-columns: repeat(4, 1fr); } }
 
 .main__tips .tipsArticle {
   padding: 10px;
