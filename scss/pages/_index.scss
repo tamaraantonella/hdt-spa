@@ -13,7 +13,7 @@
             width: 30px;
         }
     }
-   .main__banner{
+    .main__banner{
         width: 100%;
         height: 300px;
         background-image: url(../img/banner.jpg);
@@ -21,7 +21,7 @@
         background-size: cover;
         background-position: center;
         box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.5);
-       &--container{
+        &--container{
             display: flex;
             height: 100%;
             flex-direction: column;
@@ -117,18 +117,16 @@
             flex-direction: column;
             width: 100%;
             &--box{
-                box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.5);
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                background-color: rgba(241, 95, 13, 0.8);
-                color: white;
                 margin-bottom: 10px;
                 height: fit-content;
                 text-align: center;
                 padding: 1rem;
                 transition: all 1s ease-in-out;
+                color: $colorNaranja;
                 &:hover{
                     transform: scale(1.1);
                 }
@@ -136,8 +134,8 @@
                     font-family: 'Amatic SC', cursive;
                     font-size: 2rem;
                     a{
+                        color: $colorNaranja;
                         text-decoration: none;
-                        color: white;
                         font-family: 'Amatic SC', cursive;
                     }
                 }
@@ -162,11 +160,11 @@
         .main__banner{
             height: 500px;
             .main__banner--container{
-                 div{
-                     h1{
-                         background-color: rgba(62, 124, 23, 0.8);
-                         font-size: 5rem;
-                         color: white;
+                div{
+                    h1{
+                        background-color: rgba(62, 124, 23, 0.8);
+                        font-size: 5rem;
+                        color: white;
                     }
                 }    
             } 
@@ -199,7 +197,7 @@
                 .boxes__container--box{
                     width: 30%;
                     text-align: center;
-                    height:400px;
+                    height:300px;
                     p{
                         width: 90%;
                         margin: auto;
@@ -210,8 +208,7 @@
             }
 
         }
-     }
-     
+    }
 }
     
 
@@ -219,11 +216,11 @@
     .index__main{
         .main__banner{
             .main__banner--container{
-                 div{
-                     h1{
-                         background-color: rgba(62, 124, 23, 0.8);
-                         font-size: 7rem;
-                         color: white;
+                div{
+                    h1{
+                        background-color: rgba(62, 124, 23, 0.8);
+                        font-size: 7rem;
+                        color: white;
                     }
                 }    
             } 
@@ -244,16 +241,16 @@
         .main__boxes{
             .boxes__container{
                 .boxes__container--box{
+                    width: 35%;
                     height:300px;
                     p{
-                        font-size: 1.3rem;
+                        font-size: 1.5rem;
 
                     }
                 }
             }
 
         }
-     }
-     
+    }
 }
     

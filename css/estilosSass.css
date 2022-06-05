@@ -210,26 +210,24 @@ footer {
   flex-direction: column;
   width: 100%; }
   .index__main .main__boxes .boxes__container--box {
-    box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(241, 95, 13, 0.8);
-    color: white;
     margin-bottom: 10px;
     height: fit-content;
     text-align: center;
     padding: 1rem;
-    transition: all 1s ease-in-out; }
+    transition: all 1s ease-in-out;
+    color: #F15F0D; }
     .index__main .main__boxes .boxes__container--box:hover {
       transform: scale(1.1); }
     .index__main .main__boxes .boxes__container--box h3 {
       font-family: 'Amatic SC', cursive;
       font-size: 2rem; }
       .index__main .main__boxes .boxes__container--box h3 a {
+        color: #F15F0D;
         text-decoration: none;
-        color: white;
         font-family: 'Amatic SC', cursive; }
     .index__main .main__boxes .boxes__container--box p {
       width: 100%;
@@ -267,7 +265,7 @@ footer {
     .index__main .main__boxes .boxes__container .boxes__container--box {
       width: 30%;
       text-align: center;
-      height: 400px; }
+      height: 300px; }
       .index__main .main__boxes .boxes__container .boxes__container--box p {
         width: 90%;
         margin: auto;
@@ -288,9 +286,10 @@ footer {
       margin: auto;
       font-size: 2rem; }
   .index__main .main__boxes .boxes__container .boxes__container--box {
+    width: 35%;
     height: 300px; }
     .index__main .main__boxes .boxes__container .boxes__container--box p {
-      font-size: 1.3rem; } }
+      font-size: 1.5rem; } }
 
 .main__aboutus .main__aboutus--div div h2 {
   font-family: 'Amatic SC', cursive;
