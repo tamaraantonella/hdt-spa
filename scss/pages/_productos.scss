@@ -6,10 +6,10 @@
         bottom: 0;
         z-index: 9999;
         a{
-            i{
-                font-size: 25px;
-                margin: 5px;
-                color: grey;
+            img{
+                width: 35px;
+                height: 35px;
+                margin: 10px;
             }
         }
     }
@@ -65,12 +65,13 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
+        margin: 35px 0px;
         .boxes--products-title{
             font-family: 'Amatic SC', cursive;
             color: white;
             width: 100%;
             text-align: center;
-            font-size: 25px;
+            font-size:30px;
         }
         #box-tomate{
             background-color: $colorMultiuso;
@@ -102,15 +103,18 @@
                         right: 0px;
                         text-align: center;
                         background-color: rgba(224, 40, 40, 0.95);
-                        width: 55px;
-                        height: 55px;
+                        width: 65px;
+                        height: 65px;
                         border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                         p{
                             color: white;
                             font-weight: 600;
                             text-transform: uppercase;
-                            padding: 5px;
                             font-size: 14px;
+                            margin:0;
                         }
 
                     }

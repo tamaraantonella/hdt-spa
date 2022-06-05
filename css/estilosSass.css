@@ -444,10 +444,10 @@ footer {
   right: 0;
   bottom: 0;
   z-index: 9999; }
-  .container--productos .topButton a i {
-    font-size: 25px;
-    margin: 5px;
-    color: grey; }
+  .container--productos .topButton a img {
+    width: 35px;
+    height: 35px;
+    margin: 10px; }
 
 .container--productos .productos-title {
   color: #3e7c17;
@@ -493,13 +493,14 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%; }
+  width: 100%;
+  margin: 35px 0px; }
   .container--productos .container--productos--section .boxes--products-title {
     font-family: 'Amatic SC', cursive;
     color: white;
     width: 100%;
     text-align: center;
-    font-size: 25px; }
+    font-size: 30px; }
   .container--productos .container--productos--section #box-tomate {
     background-color: #ac6349; }
   .container--productos .container--productos--section #box-pepinos {
@@ -524,15 +525,18 @@ footer {
         right: 0px;
         text-align: center;
         background-color: rgba(224, 40, 40, 0.95);
-        width: 55px;
-        height: 55px;
-        border-radius: 50%; }
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
         .container--productos .container--productos--section .boxes-box .boxes--products .card .sin-stock p {
           color: white;
           font-weight: 600;
           text-transform: uppercase;
-          padding: 5px;
-          font-size: 14px; }
+          font-size: 14px;
+          margin: 0; }
       .container--productos .container--productos--section .boxes-box .boxes--products .card img {
         width: 286px;
         height: 215px;
