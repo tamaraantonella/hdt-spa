@@ -1,5 +1,18 @@
 
 .container--productos{
+    .topButton{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        z-index: 9999;
+        a{
+            i{
+                font-size: 25px;
+                margin: 5px;
+                color: grey;
+            }
+        }
+    }
     .productos-title {
         color:$colorPrincipal;
         box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.2);
@@ -23,6 +36,26 @@
                     background-color: $colorNaranja;
                     transform: scale(1.4);
                     color: white;
+                }
+            }
+        }
+    }
+    .dropdown{
+        width: 100%;
+        button{
+            background-color: $colorPrincipal;
+            border: none;
+            background-color: $colorPrincipal;
+            border: none;
+            font-family: 'Gafata', sans-serif;
+        }
+        ul{
+            width: 100%;
+            padding: 10px;
+            li{
+                width: 100%;
+                a{
+                    font-weight: bold;
                 }
             }
         }
@@ -64,6 +97,23 @@
             justify-content: center;
             .boxes--products{
                 .card{
+                    .sin-stock{
+                        position: absolute;
+                        right: 0px;
+                        text-align: center;
+                        background-color: rgba(224, 40, 40, 0.95);
+                        width: 55px;
+                        height: 55px;
+                        border-radius: 50%;
+                        p{
+                            color: white;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            padding: 5px;
+                            font-size: 14px;
+                        }
+
+                    }
                     margin-bottom: 15px;
                     img{
                         width: 286px;
@@ -99,6 +149,19 @@
 }
 @media screen and (min-width:992px){
     .container--productos{
+        .dropdown{
+            button{
+                background-color: $colorPrincipal;
+                border: none;
+                font-size: 20px;
+            }
+            ul{
+                width: 100%;
+                li{
+                    width: 100%;
+                }
+            }
+        }
         .container--productos--section{
             .boxes-box{
                 grid-template-columns: repeat(3,1fr);
