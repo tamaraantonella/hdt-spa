@@ -479,6 +479,14 @@ footer {
     background-color: #ac6349; }
   .container--productos .container--productos--section #box-pepinos {
     background-color: #3e7c17; }
+  .container--productos .container--productos--section #box-ajies {
+    background-color: #b52626; }
+  .container--productos .container--productos--section #box-zapallos {
+    background-color: #cc5e35; }
+  .container--productos .container--productos--section #box-exoticos {
+    background-color: #8141cf; }
+  .container--productos .container--productos--section #box-huerta {
+    background-color: #52c258; }
   .container--productos .container--productos--section .boxes-box {
     width: 100%;
     display: flex;
