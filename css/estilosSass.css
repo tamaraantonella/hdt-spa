@@ -119,11 +119,11 @@ footer {
   z-index: 99999; }
   .index__main .wp img {
     object-fit: cover;
-    width: 30px; }
+    width: 40px; }
 
 .index__main .main__banner {
   width: 100%;
-  height: 300px;
+  height: 350px;
   background-image: url(../img/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -161,7 +161,7 @@ footer {
 .index__main .main__bolsones {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   gap: 10px;
   align-items: center;
   height: 600px;
@@ -182,15 +182,16 @@ footer {
     color: #3e7c17;
     font-family: 'Gafata', sans-serif;
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
     font-size: 1rem; }
     .index__main .main__bolsones p a {
       color: #3e7c17;
       font-family: 'Gafata', sans-serif; }
   .index__main .main__bolsones h4 {
-    color: white;
+    color: #3e7c17;
     font-family: 'Gafata', sans-serif;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: bold; }
   .index__main .main__bolsones .main__conoce {
     width: 100%;
     display: flex;
@@ -201,7 +202,8 @@ footer {
       color: white;
       font-family: 'Gafata', sans-serif;
       margin: 15px 0px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-weight: bold; }
     .index__main .main__bolsones .main__conoce i {
       color: white; }
 
@@ -234,6 +236,22 @@ footer {
       margin: auto;
       font-family: 'Gafata', sans-serif;
       font-size: 1rem; }
+
+.index__main .main__imagenes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px auto; }
+  .index__main .main__imagenes-img {
+    width: 95%;
+    height: 300px;
+    margin-bottom: 15px; }
+    .index__main .main__imagenes-img img {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 100%; }
 
 @media screen and (min-width: 768px) {
   .index__main .wp img {
@@ -269,7 +287,22 @@ footer {
       .index__main .main__boxes .boxes__container .boxes__container--box p {
         width: 90%;
         margin: auto;
-        font-size: 1rem; } }
+        font-size: 1rem; }
+  .index__main .main__imagenes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 25px auto; }
+    .index__main .main__imagenes-img {
+      width: 30%;
+      height: 300px;
+      margin-bottom: 15px; }
+      .index__main .main__imagenes-img img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%; } }
 
 @media screen and (min-width: 1024px) {
   .index__main .main__banner .main__banner--container div h1 {
@@ -278,7 +311,8 @@ footer {
     color: white; }
   .index__main .main__bolsones {
     height: 700px;
-    width: 100%; }
+    width: 100%;
+    padding: 2rem; }
     .index__main .main__bolsones h2 {
       font-size: 4rem; }
     .index__main .main__bolsones p {
@@ -291,36 +325,50 @@ footer {
     .index__main .main__boxes .boxes__container .boxes__container--box p {
       font-size: 1.5rem; } }
 
-.main__aboutus .main__aboutus--div div h2 {
+.main__aboutus .main__aboutus--div .cards-1 h2 {
   font-family: 'Amatic SC', cursive;
   color: #3e7c17; }
 
-.main__aboutus .main__aboutus--div div .imgs img {
+.main__aboutus .main__aboutus--div .cards-1 .imgs {
+  height: 300px;
   width: 100%;
-  margin-bottom: 2rem; }
+  margin: 15px 0px; }
+  .main__aboutus .main__aboutus--div .cards-1 .imgs img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2rem;
+    object-fit: cover;
+    object-position: center; }
 
 .main__aboutus .main__aboutus--div .main__aboutusContainer h1 {
   text-align: center;
   font-family: 'Amatic SC', cursive;
   color: #3e7c17;
-  font-size: 2rem; }
+  font-size: 3rem; }
 
 .main__aboutus .main__aboutus--div .main__aboutusContainer p {
   text-align: center;
   font-family: 'Gafata', sans-serif; }
 
 @media screen and (min-width: 768px) {
-  .main__aboutus .main__aboutus--div div h2 {
+  .main__aboutus .main__aboutus--div .cards-1 h2 {
     font-family: 'Amatic SC', cursive;
     color: #3e7c17; }
-  .main__aboutus .main__aboutus--div div .imgs img {
+  .main__aboutus .main__aboutus--div .cards-1 .imgs {
+    height: 500px;
     width: 100%;
-    margin-bottom: 2rem; }
+    margin: 15px 0px; }
+    .main__aboutus .main__aboutus--div .cards-1 .imgs img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 2rem;
+      object-fit: cover;
+      object-position: center; }
   .main__aboutus .main__aboutus--div .main__aboutusContainer h1 {
     text-align: center;
     font-family: 'Amatic SC', cursive;
     color: #3e7c17;
-    font-size: 2rem; }
+    font-size: 3rem; }
   .main__aboutus .main__aboutus--div .main__aboutusContainer p {
     text-align: center;
     font-family: 'Gafata', sans-serif;
@@ -457,7 +505,7 @@ footer {
     text-align: center;
     font-family: 'Amatic SC', cursive;
     color: #3e7c17;
-    font-size: 2rem; }
+    font-size: 3rem; }
   .container--productos .productos-title p {
     transition: all 1s ease-in-out; }
     .container--productos .productos-title p:hover {
@@ -494,7 +542,8 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin: 35px 0px; }
+  padding: 35px 0px;
+  margin: 10px 0; }
   .container--productos .container--productos--section .boxes--products-title {
     font-family: 'Amatic SC', cursive;
     color: white;
@@ -583,7 +632,7 @@ footer {
     text-align: center;
     font-family: 'Amatic SC', cursive;
     color: #3e7c17;
-    font-size: 2rem; }
+    font-size: 3rem; }
 
 .main__tips .main__tips--block {
   display: flex;
