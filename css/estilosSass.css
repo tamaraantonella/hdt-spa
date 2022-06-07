@@ -187,8 +187,8 @@ footer {
     .index__main .main__bolsones p a {
       color: #3e7c17;
       font-family: 'Gafata', sans-serif; }
-  .index__main .main__bolsones h4 {
-    color: #3e7c17;
+  .index__main .main__bolsones h6 {
+    color: white;
     font-family: 'Gafata', sans-serif;
     text-transform: uppercase;
     font-weight: bold; }
@@ -317,8 +317,10 @@ footer {
       font-size: 4rem; }
     .index__main .main__bolsones p {
       width: 80%;
-      margin: auto;
+      margin: 0 auto;
       font-size: 2rem; }
+    .index__main .main__bolsones h6 {
+      font-size: 1.5rem; }
   .index__main .main__boxes .boxes__container .boxes__container--box {
     width: 35%;
     height: 300px; }
