@@ -1,5 +1,9 @@
 // BANNER
 .index__main{
+    background-image: url(../img/bgindex.svg);
+    background-position: center;
+    background-size: cover;
+    height: fit-content;
     .wp{
         display: inline-block;
         margin: 10px;
@@ -55,24 +59,18 @@
             }    
         } 
     }
-    
     .main__bolsones{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        gap:10px;
+        gap:20px;
         align-items: center;
-        height: 600px;
+        height: fit-content;
         width: 100%;
-        margin-top: 1rem;
         margin-bottom: 1rem;
-        background-image: url(../img/bgindex.svg);
-        background-position: center;
-        background-size: cover;
         text-align: center;
         padding: 1rem;
         h2{
-            margin-top: 30px;
             font-family: 'Amatic SC', cursive;
             color: $colorPrincipal;
             font-size: 2rem;
@@ -82,43 +80,27 @@
             font-family: 'Gafata', sans-serif;
             width: 90%;
             margin: 0 auto;
-            font-size: 1rem;
+            font-size: 20px;
             a{
                 color: $colorPrincipal;
                 font-family: 'Gafata', sans-serif;
             }
         }
         h6{
-            color: white;
+            color: $colorPrincipal;
             font-family: 'Gafata', sans-serif;
             text-transform: uppercase;
             font-weight: bold;
             
         }
-        .main__conoce{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            p{
-                color: white;
-                font-family: 'Gafata', sans-serif;
-                margin: 15px 0px;
-                text-transform: uppercase;
-                font-weight: bold;
-            }
-            i{
-                color:white;
-            }
-    
-        }
+        
     }
     .main__boxes{
         .boxes__container{
             display: flex;
             flex-direction: column;
-            width: 100%;
+            width: 90%;
+            margin: 0 auto;
             &--box{
                 display: flex;
                 flex-direction: column;
@@ -127,26 +109,27 @@
                 margin-bottom: 10px;
                 height: fit-content;
                 text-align: center;
-                padding: 1rem;
                 transition: all 1s ease-in-out;
                 color: $colorNaranja;
                 &:hover{
                     transform: scale(1.1);
                 }
                 h3{
-                    font-family: 'Amatic SC', cursive;
+                    font-family: 'Gafata', sans-serif;
                     font-size: 2rem;
+                    font-weight: bold;
                     a{
                         color: $colorNaranja;
                         text-decoration: none;
-                        font-family: 'Amatic SC', cursive;
+                        font-family: 'Gafata', sans-serif;
                     }
                 }
                 p{
                     width: 100%;
-                    margin: auto;
                     font-family: 'Gafata', sans-serif;
-                    font-size: 1rem;
+                    font-size: 20px;
+                    font-weight: 600;
+                    
                 }
             }
         }
@@ -157,7 +140,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 25px auto;
+        margin: 35px auto;
         &-img{
             width: 95%;
             height: 300px;
@@ -167,6 +150,7 @@
                 object-position: center;
                 width: 100%;
                 height: 100%;
+                border-radius: 5%;
             }
         }
     }
@@ -192,7 +176,7 @@
         }
         .main__bolsones{
             height: fit-content;
-            max-height: 700px;            
+            max-height: 600px;            
             h2{
                 font-size: 3rem;
                 margin-top: 5px;
@@ -208,33 +192,38 @@
             
         }
         .main__boxes{
+            margin:35px 0px;
             .boxes__container{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
-                align-items:center;
+                align-items:flex-start;
                 width: 100%;
-
                 .boxes__container--box{
                     width: 30%;
                     text-align: center;
-                    height:300px;
+                    height:200px;
+                    h3{
+                        color:white;
+                        a{
+                            color:white;
+                        }
+                    }
                     p{
-                        width: 90%;
+                        width:100%;
                         margin: auto;
                         font-size: 1rem;
-
+                        color:white;
                     }
                 }
             }
-
         }
         .main__imagenes{
             width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            margin: 25px auto;
+            padding: 10px;
             &-img{
                 width: 30%;
                 height: 300px;
@@ -284,7 +273,7 @@
         .main__boxes{
             .boxes__container{
                 .boxes__container--box{
-                    width: 35%;
+                    width: 30%;
                     height:300px;
                     p{
                         font-size: 1.5rem;
