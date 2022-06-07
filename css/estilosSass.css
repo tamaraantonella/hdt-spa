@@ -506,13 +506,11 @@ footer {
     .container--productos .productos-title p a {
       color: #3e7c17;
       text-decoration: none;
-      transition: all 1s ease-in-out;
+      transition: all .5s ease-in-out;
       font-family: 'Gafata', sans-serif;
       padding: 0.5rem; }
       .container--productos .productos-title p a:hover {
-        background-color: #F15F0D;
-        transform: scale(1.4);
-        color: white; }
+        transform: scale(1.4); }
 
 .container--productos .dropdown {
   width: 100%; }
