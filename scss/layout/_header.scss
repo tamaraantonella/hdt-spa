@@ -2,17 +2,24 @@ header{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: fit-content;
+    height: 120px;
     align-items: center;
+    justify-content: center;
     position: sticky;
     padding: 5px;
     top: 0;
-    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.5);
-    background-color: $colorFondoHeader;
+    box-shadow: 0px 34px 44px -21px rgba(0,0,0,0.1);
     z-index: 9999;
+    background-color: $colorFondoHeader;
     .header__logo{
-        img{
-            width: 3rem;
+        height: 50px;
+        a{
+            height: 100%;
+            img{
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
         }
     }
     .header__nav{
@@ -21,33 +28,28 @@ header{
         justify-content: space-between;
         a{
             text-decoration: none;
-            text-transform: uppercase;
-            font-family: 'Englebert', sans-serif;
+            text-transform: capitalize;
+            font-family: $font;
             color: $colorPrincipal;
         }
-         
     }
 }
 @media screen and (min-width:768px) {
     header{
+        height: 120px;
         flex-direction: row;
         justify-content: space-between;
         .header__nav{
             max-width: 600px;
-            justify-content: space-between;
             a{
-                text-decoration: none;
-                text-transform: uppercase;
-                font-family: 'Englebert', sans-serif;
-                font-size: 1.5rem;
-                transition: all 0.5s ease-in-out;
+                font-size: 1rem;
+                transition: all 0.4s ease-in-out;
                 &:hover{
                     color: $colorNaranja;
                     text-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.5);
                     transform: scale(1.2);
                 }
             }
-             
         }
     }    
 } 
