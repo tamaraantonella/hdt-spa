@@ -17,11 +17,10 @@ h1 {
 .box__title, .box__title2, .box__title3, .box__title4 {
   width: 100%;
   background-color: #3e7c17;
-  text-transform: uppercase;
   color: #e7e5dc;
   font-size: larger;
-  font-family: 'Amatic SC', cursive;
-  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+  padding: .5rem;
   text-align: center; }
 
 .box__title2 {
@@ -43,7 +42,7 @@ header {
   position: sticky;
   padding: 5px;
   top: 0;
-  box-shadow: 0px 34px 44px -21px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 24px 10px -21px rgba(0, 0, 0, 0.1);
   z-index: 9999;
   background-color: #ffffffd5; }
   header .header__logo {
@@ -225,7 +224,7 @@ footer {
     margin-bottom: 10px;
     height: fit-content;
     text-align: center;
-    transition: all .3s ease-in-out;
+    transition: all .4s ease-in-out;
     color: #e7e5dc;
     cursor: pointer; }
     .index__main .boxes__container--box:hover {
@@ -296,49 +295,131 @@ footer {
     .index__main .boxes__container .boxes__container--box p {
       font-size: 1rem; } }
 
-.main__aboutus .main__aboutus--div div h2 {
-  font-family: 'Amatic SC', cursive;
-  color: #355e1b; }
-
-.main__aboutus .main__aboutus--div div .imgs img {
-  width: 100%;
-  margin-bottom: 2rem; }
-
-.main__aboutus .main__aboutus--div .main__aboutusContainer h1 {
-  text-align: center;
-  font-family: 'Amatic SC', cursive;
-  color: #3e7c17;
-  font-size: 2rem; }
-
-.main__aboutus .main__aboutus--div .main__aboutusContainer p {
-  text-align: center;
-  font-family: 'Gafata', sans-serif; }
+.main__aboutus {
+  display: flex;
+  flex-direction: column; }
+  .main__aboutus .main__aboutusContainer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0px; }
+    .main__aboutus .main__aboutusContainer h3, .main__aboutus .main__aboutusContainer h2 {
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      color: #56694b; }
+    .main__aboutus .main__aboutusContainer p {
+      text-align: justify; }
+  .main__aboutus .nosotras {
+    display: flex;
+    flex-direction: column;
+    width: 80%; }
+    .main__aboutus .nosotras .carts {
+      display: flex;
+      flex-direction: column;
+      padding: 10px; }
+      .main__aboutus .nosotras .carts h2 {
+        font-family: "Montserrat", sans-serif;
+        color: #56694b; }
+      .main__aboutus .nosotras .carts .imgs img {
+        width: 100%;
+        border-radius: 5px; }
 
 @media screen and (min-width: 768px) {
-  .main__aboutus .main__aboutus--div div h2 {
-    font-family: 'Amatic SC', cursive;
-    color: #355e1b; }
-  .main__aboutus .main__aboutus--div div .imgs img {
-    width: 100%;
-    margin-bottom: 2rem; }
-  .main__aboutus .main__aboutus--div .main__aboutusContainer h1 {
-    text-align: center;
-    font-family: 'Amatic SC', cursive;
-    color: #3e7c17;
-    font-size: 2rem; }
-  .main__aboutus .main__aboutus--div .main__aboutusContainer p {
-    text-align: center;
-    font-family: 'Gafata', sans-serif;
-    font-size: 1.2rem; } }
+  .main__aboutus {
+    flex-direction: row;
+    width: 90%;
+    justify-content: center; }
+    .main__aboutus .main__aboutusContainer {
+      width: 90%; }
+      .main__aboutus .main__aboutusContainer p {
+        font-size: 20px; }
+    .main__aboutus .nosotras {
+      width: 80%;
+      justify-content: space-around; }
+      .main__aboutus .nosotras .carts {
+        width: 60%; } }
+
+@media screen and (min-width: 1020px) {
+  .main__aboutus {
+    flex-direction: column;
+    width: 90%;
+    justify-content: center; }
+    .main__aboutus .main__aboutusContainer {
+      width: 90%; }
+      .main__aboutus .main__aboutusContainer p {
+        font-size: 20px; }
+    .main__aboutus .nosotras {
+      width: 80%;
+      flex-direction: row; }
+      .main__aboutus .nosotras .carts {
+        width: 40%; } }
 
 .main__contact {
-  margin: 40px auto; }
+  margin: 0px auto; }
+  .main__contact .main__contactContainer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0px; }
+    .main__contact .main__contactContainer h3, .main__contact .main__contactContainer h2 {
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      color: #56694b; }
+    .main__contact .main__contactContainer p {
+      text-align: justify; }
   .main__contact .main__contactSection {
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
     min-height: 90vh;
-    font-family: 'Source Sans Pro', sans-serif; }
+    font-family: "Montserrat", sans-serif; }
+    .main__contact .main__contactSection .main__section--contactData {
+      text-align: center;
+      display: flex;
+      flex-direction: column; }
+      .main__contact .main__contactSection .main__section--contactData .main__section--contactData__title {
+        color: #3e7c17;
+        font-size: 1.3rem; }
+        .main__contact .main__contactSection .main__section--contactData .main__section--contactData__title p a {
+          text-decoration: none;
+          color: #56694b;
+          transition: all .3s ease-in-out;
+          padding: 5px;
+          font-family: "Montserrat", sans-serif; }
+          .main__contact .main__contactSection .main__section--contactData .main__section--contactData__title p a:hover {
+            color: #edbd50; }
+      .main__contact .main__contactSection .main__section--contactData .main__contactSection--horarios {
+        margin-bottom: 1rem;
+        background-color: #a1ab8e;
+        color: white;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 50vh; }
+        .main__contact .main__contactSection .main__section--contactData .main__contactSection--horarios h4 {
+          font-family: "Montserrat", sans-serif; }
+        .main__contact .main__contactSection .main__section--contactData .main__contactSection--horarios p {
+          font-family: "Montserrat", sans-serif; }
+      .main__contact .main__contactSection .main__section--contactData .main__contactSection--ubicacion {
+        color: #355e1b;
+        font-weight: 500; }
+        .main__contact .main__contactSection .main__section--contactData .main__contactSection--ubicacion h4 {
+          font-family: "Montserrat", sans-serif;
+          font-weight: bold;
+          font-size: 2rem; }
+        .main__contact .main__contactSection .main__section--contactData .main__contactSection--ubicacion p {
+          font-weight: bold;
+          font-size: 1rem;
+          font-family: 'Gafata', sans-serif; }
+        .main__contact .main__contactSection .main__section--contactData .main__contactSection--ubicacion iframe {
+          width: 80%;
+          height: 60%; }
     .main__contact .main__contactSection .form {
       display: flex;
       justify-content: center; }
@@ -351,10 +432,10 @@ footer {
         .main__contact .main__contactSection .form .main__section--contact .main__section--contactForm {
           display: grid;
           align-items: center; }
-          .main__contact .main__contactSection .form .main__section--contact .main__section--contactForm h2 {
+          .main__contact .main__contactSection .form .main__section--contact .main__section--contactForm p {
             text-align: center;
             margin-bottom: 1rem;
-            font-family: 'Amatic SC', cursive;
+            font-family: "Montserrat", sans-serif;
             color: #3e7c17;
             font-size: 2rem; }
           .main__contact .main__contactSection .form .main__section--contact .main__section--contactForm input {
@@ -394,45 +475,6 @@ footer {
               background-color: #666666;
               color: white;
               cursor: pointer; }
-    .main__contact .main__contactSection .main__section--contactData {
-      text-align: center;
-      display: flex;
-      flex-direction: column; }
-      .main__contact .main__contactSection .main__section--contactData .main__section--contactData__title {
-        color: #3e7c17;
-        font-size: 2rem; }
-        .main__contact .main__contactSection .main__section--contactData .main__section--contactData__title h2 a {
-          text-decoration: none;
-          color: #3E7C17;
-          transition: all 1s ease-in-out;
-          padding: 5px;
-          font-family: 'Amatic SC', cursive; }
-          .main__contact .main__contactSection .main__section--contactData .main__section--contactData__title h2 a:hover {
-            color: #edbd50; }
-      .main__contact .main__contactSection .main__section--contactData .main__contactSection--horarios {
-        margin-bottom: 1rem;
-        background-color: #eb681cd5;
-        border-radius: 10px;
-        color: white;
-        padding: 1rem; }
-        .main__contact .main__contactSection .main__section--contactData .main__contactSection--horarios h4 {
-          font-family: 'Gafata', sans-serif; }
-        .main__contact .main__contactSection .main__section--contactData .main__contactSection--horarios p {
-          font-family: 'Gafata', sans-serif; }
-      .main__contact .main__contactSection .main__section--contactData .main__contactSection--ubicacion {
-        color: #355e1b;
-        font-weight: 500; }
-        .main__contact .main__contactSection .main__section--contactData .main__contactSection--ubicacion h4 {
-          font-family: 'Amatic SC', cursive;
-          font-weight: bold;
-          font-size: 2rem; }
-        .main__contact .main__contactSection .main__section--contactData .main__contactSection--ubicacion p {
-          font-weight: bold;
-          font-size: 1rem;
-          font-family: 'Gafata', sans-serif; }
-        .main__contact .main__contactSection .main__section--contactData .main__contactSection--ubicacion iframe {
-          width: 80%;
-          height: 60%; }
 
 @media screen and (min-width: 768px) {
   .main__contact .main__contactSection {
@@ -440,9 +482,11 @@ footer {
     justify-content: space-evenly;
     margin: 20px auto;
     align-items: flex-start; }
-    .main__contact .main__contactSection .main__section--contactData .main__contactSection--ubicacion iframe {
-      width: 100%;
-      height: 300px; } }
+    .main__contact .main__contactSection .main__section--contactData .main__contactSection--ubicacion {
+      width: 100%; }
+      .main__contact .main__contactSection .main__section--contactData .main__contactSection--ubicacion iframe {
+        width: 100%;
+        height: 350px; } }
 
 .container--productos .topButton {
   position: fixed;
@@ -455,44 +499,27 @@ footer {
     color: grey; }
 
 .container--productos .productos-title {
-  color: #355e1b;
-  box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.2);
-  margin-bottom: 10px; }
-  .container--productos .productos-title h2 {
-    text-align: center;
-    font-family: 'Amatic SC', cursive;
-    color: #3e7c17;
-    font-size: 2rem; }
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0px; }
+  .container--productos .productos-title h3, .container--productos .productos-title h2 {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: #56694b; }
   .container--productos .productos-title p {
-    transition: all 1s ease-in-out; }
+    text-align: justify; }
+  .container--productos .productos-title p {
+    transition: all .3s ease-in-out; }
     .container--productos .productos-title p:hover {
-      transform: scale(1.4); }
+      transform: scale(1.1); }
     .container--productos .productos-title p a {
       color: #355e1b;
       text-decoration: none;
-      transition: all 1s ease-in-out;
-      font-family: 'Gafata', sans-serif;
+      font-family: "Montserrat", sans-serif;
       padding: 0.5rem; }
-      .container--productos .productos-title p a:hover {
-        background-color: #f08d54;
-        transform: scale(1.4);
-        color: white; }
-
-.container--productos .dropdown {
-  width: 100%; }
-  .container--productos .dropdown button {
-    background-color: #355e1b;
-    border: none;
-    background-color: #355e1b;
-    border: none;
-    font-family: 'Gafata', sans-serif; }
-  .container--productos .dropdown ul {
-    width: 100%;
-    padding: 10px; }
-    .container--productos .dropdown ul li {
-      width: 100%; }
-      .container--productos .dropdown ul li a {
-        font-weight: bold; }
 
 .container--productos .container--productos--section {
   display: flex;
@@ -500,7 +527,8 @@ footer {
   align-items: center;
   width: 100%; }
   .container--productos .container--productos--section .boxes--products-title {
-    font-family: 'Amatic SC', cursive;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
     color: white;
     width: 100%;
     text-align: center;
@@ -549,7 +577,7 @@ footer {
 
 @media screen and (min-width: 768px) {
   .container--productos .container--productos--section .boxes--products-title {
-    font-size: 45px; }
+    font-size: 30px; }
   .container--productos .container--productos--section .boxes-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -578,13 +606,18 @@ footer {
     grid-template-columns: repeat(5, 1fr); } }
 
 .main__tips .tipsArticle {
-  padding: 10px;
-  text-align: center; }
-  .main__tips .tipsArticle h2 {
-    text-align: center;
-    font-family: 'Amatic SC', cursive;
-    color: #3e7c17;
-    font-size: 2rem; }
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0px; }
+  .main__tips .tipsArticle h3, .main__tips .tipsArticle h2 {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: #56694b; }
+  .main__tips .tipsArticle p {
+    text-align: justify; }
 
 .main__tips .main__tips--block {
   display: flex;
@@ -601,6 +634,8 @@ footer {
     width: 100%;
     height: fit-content;
     margin-bottom: 10px; }
+    .main__tips .main__tips--block__box .bpx__title {
+      font-family: "Montserrat", sans-serif; }
     .main__tips .main__tips--block__box .box__cards {
       padding: 0.5rem; }
       .main__tips .main__tips--block__box .box__cards div p {
@@ -614,3 +649,62 @@ footer {
     .main__tips .main__tips--block__box {
       margin-right: 10px;
       margin-left: 10px; } }
+
+.productMain {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .productMain--title {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0px; }
+    .productMain--title h3, .productMain--title h2 {
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      color: #56694b; }
+    .productMain--title p {
+      text-align: justify; }
+  .productMain--options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    align-items: center; }
+    .productMain--options .boxP {
+      width: 250px;
+      height: 250px;
+      margin-bottom: 15px; }
+      .productMain--options .boxP div {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.493);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .8s ease-in-out; }
+        .productMain--options .boxP div:hover {
+          background-color: inherit; }
+        .productMain--options .boxP div a {
+          text-decoration: none;
+          color: white;
+          font-family: "Montserrat", sans-serif;
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 2rem;
+          text-shadow: 5px 5px 8px black; }
+    .productMain--options .semillas {
+      background-image: url(../img/semilla.jpeg);
+      background-position: center;
+      background-size: cover; }
+    .productMain--options .plantines {
+      background-image: url(../img/plantines.jpeg);
+      background-position: center;
+      background-size: cover; }
+    .productMain--options .bolsones {
+      background-image: url(../img/bolson.jpeg);
+      background-position: center;
+      background-size: cover; }

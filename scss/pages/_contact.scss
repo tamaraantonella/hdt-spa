@@ -1,11 +1,70 @@
 .main__contact{
-    margin:40px auto;
+    margin:0px auto;
+    .main__contactContainer{
+        @include titles;
+    }
     .main__contactSection{
         display: flex;
         flex-direction: column;
         margin-bottom: 2rem;
         min-height: 90vh;
-        font-family: 'Source Sans Pro', sans-serif; 
+        font-family: $font; 
+        .main__section--contactData{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            .main__section--contactData__title{
+                color:map-get($colors, verdeP);
+                font-size: 1.3rem;
+                p{
+                    a{
+                        text-decoration: none;
+                        color: $verdeOs;
+                        transition: all .3s ease-in-out;
+                        padding: 5px;
+                        font-family: $font;
+                        &:hover{
+                            color: $colorLightNaranja;     
+                        }
+                    }
+                }
+            }
+            .main__contactSection--horarios{
+                margin-bottom: 1rem;
+                background-color: $verdeBg;
+                color: white;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                height: 50vh;
+                h4{
+                    font-family: $font;
+                }
+                p{
+                    font-family: $font;
+                }
+            }
+            .main__contactSection--ubicacion{
+                color: $colorPrincipal;
+                font-weight: 500;
+                h4{
+                    font-family: $font;
+                    font-weight: bold;
+                    font-size: 2rem;
+                }
+                p{
+                    font-weight: bold;
+                    font-size: 1rem;
+                    font-family: 'Gafata', sans-serif;
+                }
+                iframe{
+                    width: 80%;
+                    height: 60%;
+                }
+            }   
+        }
         .form{
             display: flex;
             justify-content: center;
@@ -18,10 +77,10 @@
                 .main__section--contactForm{
                     display: grid;
                     align-items: center;
-                    h2{
+                    p{
                         text-align: center;
                         margin-bottom: 1rem;
-                        font-family: 'Amatic SC', cursive;
+                        font-family: $font;
                         color:map-get($colors, verdeP );
                         font-size: 2rem;
                         
@@ -76,59 +135,6 @@
                 }
             } 
         }
-        .main__section--contactData{
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            .main__section--contactData__title{
-                color:map-get($colors, verdeP);
-                font-size: 2rem;
-                h2{
-                    a{
-                        text-decoration: none;
-                        color: #3E7C17;
-                        transition: all 1s ease-in-out;
-                        padding: 5px;
-                        font-family: 'Amatic SC', cursive;
-                        &:hover{
-                            color: $colorLightNaranja;     
-                        }
-                    }
-                }
-            }
-            .main__contactSection--horarios{
-                margin-bottom: 1rem;
-                background-color: map-get($colors, naranja2 );
-                border-radius: 10px;
-                color: white;
-                padding: 1rem;
-                h4{
-                    font-family: 'Gafata', sans-serif;
-
-                }
-                p{
-                    font-family: 'Gafata', sans-serif;
-                }
-            }
-            .main__contactSection--ubicacion{
-                color: $colorPrincipal;
-                font-weight: 500;
-                h4{
-                    font-family: 'Amatic SC', cursive;
-                    font-weight: bold;
-                    font-size: 2rem;
-                }
-                p{
-                    font-weight: bold;
-                    font-size: 1rem;
-                    font-family: 'Gafata', sans-serif;
-                }
-                iframe{
-                    width: 80%;
-                    height: 60%;
-                }
-            }   
-        }
     }
 }
 @media screen and (min-width:768px) {
@@ -140,14 +146,13 @@
             align-items: flex-start;
             .main__section--contactData{
                 .main__contactSection--ubicacion{
+                    width: 100%;
                     iframe{
                         width: 100%;
-                        height: 300px;   
+                        height: 350px;   
                     }
                 }
-
             }
-        }
-          
+        } 
     }
 }

@@ -1,10 +1,6 @@
 .main__tips{
     .tipsArticle{
-        padding: 10px;
-        text-align: center;
-        h2{
-            @include titles;
-        }
+        @include titles;
     }
     .main__tips--block{
         display: flex;
@@ -21,6 +17,9 @@
             width: 100%;
             height: fit-content;
             margin-bottom: 10px;
+            .bpx__title{
+                font-family: $font;
+            }
             .box__cards{
                 padding: 0.5rem;
                 div{

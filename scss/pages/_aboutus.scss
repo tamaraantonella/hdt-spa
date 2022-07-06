@@ -1,53 +1,71 @@
 .main__aboutus{
-    .main__aboutus--div{
-        div{
+    display: flex;
+    flex-direction: column;
+    .main__aboutusContainer{
+        @include titles;
+    }
+    .nosotras{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        .carts{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
             h2{
-                font-family: 'Amatic SC', cursive;
-                color: $colorPrincipal;
+                font-family: $font;
+                color:$verdeOs;
             }
             .imgs{
                 img{
                     width: 100%;
-                    margin-bottom: 2rem;
+                    border-radius: 5px;
                 }
             }
         }
-        .main__aboutusContainer{
-            h1{
-                @include titles;
-            }
-            p{
-                text-align: center;
-                font-family: 'Gafata', sans-serif;
-            }
-        }
     }
+    
 }
 @media screen and (min-width:768px)  {
     .main__aboutus{
-        .main__aboutus--div{
-            div{
-                h2{
-                    font-family: 'Amatic SC', cursive;
-                    color: $colorPrincipal;
-                }
-                .imgs{
-                    img{
-                        width: 100%;
-                        margin-bottom: 2rem;
-                    }
-                }
+        flex-direction: row;
+        width: 90%;
+        justify-content: center;
+        
+        .main__aboutusContainer{
+            width: 90%;
+            p{
+                font-size: 20px;
             }
-            .main__aboutusContainer{
-                h1{
-                    @include titles;
-                }
-                p{
-                    text-align: center;
-                    font-family: 'Gafata', sans-serif;
-                    font-size: 1.2rem;
-                }
+        }
+        .nosotras{
+            width: 80%;
+            justify-content: space-around;
+            .carts{
+                width: 60%;
             }
         }
     }
+
+}
+@media screen and (min-width:1020px)  {
+    .main__aboutus{
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+        .main__aboutusContainer{
+            width: 90%;
+            p{
+                font-size: 20px;
+            }
+        }
+        .nosotras{
+            width: 80%;
+            flex-direction: row;
+            .carts{
+                width: 40%;
+            }
+        }
+    }
+
 }

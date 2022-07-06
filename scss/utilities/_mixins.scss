@@ -1,6 +1,16 @@
 @mixin titles {
-                text-align: center;
-                font-family: 'Amatic SC', cursive;
-                color: map-get($colors , verdeP );
-                font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0px;
+    h3, h2{
+        text-transform: uppercase;
+        font-family: $font;
+        color:$verdeOs;
+    }
+    p{
+        text-align: justify;
+    }
 }
