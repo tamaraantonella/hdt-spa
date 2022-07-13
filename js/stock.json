@@ -1,0 +1,241 @@
+[
+    {
+    "id": 1,
+    "type":"aji",
+    "name": "brazilian pumpkin",
+    "description": "Semillas para sembrar en primavera. En la foto, el ají aun esta sin madurar, luego se pone color rojo. Consultar stock y envíos por whatsapp.",
+    "stock": false,
+    "img":"../img/ajies/brazilian-pumpkin.jpg"
+    },{
+        "id": 2,
+        "type":"aji",
+        "name": "chile de árbol",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/ajies/chiledearbol.JPG"
+    },{
+        "id": 3,
+        "type":"aji",
+        "name": "chino 5 colores",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/ajies/chino-5-colores.JPG"
+    },{
+        "id": 4,
+        "type":"aji",
+        "name": "Corona de obispo",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/ajies/coronadeobispo.jpg"
+    },{
+        "id": 5,
+        "type":"aji",
+        "name": "Habanero Naranja",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/ajies/habanero-naranja.jpg"
+    },{
+        "id": 6,
+        "type":"aji",
+        "name": "Habanero texas",
+        "description": "Semillas para sembrar en primavera. Al madurar queda color naranja. Es de la familia de los pepinos. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/ajies/Habanero-texas.jpg"
+    },{
+        "id": 7,
+        "type":"aji",
+        "name": "holiday time",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/ajies/holliday-time.jpg"
+    },{
+        "id": 8,
+        "type":"aji",
+        "name": "jamaican yellow mushroom",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/ajies/jamaican-yellow-mushroom.jpg"
+    },{
+        "id": 9,
+        "type":"aji",
+        "name": "mA purple",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/ajies/ma-purple.JPG"
+    },{
+        "id": 10,
+        "type":"aji",
+        "name": "medusa",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/ajies/medusa.JPG"
+    },{
+        "id": 11,
+        "type":"aji",
+        "name": "Mochero",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/ajies/mochero.jpg"
+    },{
+        "id": 12,
+        "type":"aji",
+        "name": "Pimiento blanco de los Balcanes",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/ajies/Pimiento-blanco-balcanes.jpg"
+    },{
+        "id": 13,
+        "type":"aji",
+        "name": "sweet cherry",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/ajies/sweet-cherry.jpg"
+    },{
+        "id": 14,
+        "type":"aji",
+        "name": "Thunder Mountain long horn",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/ajies/Thunder-Mountain-long-horn.jpg"
+    },{
+        "id": 15,
+        "type":"exotico",
+        "name": "brocoli romanesco",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": true,
+        "img":"../img/exoticos/romanesco.jpg"
+    },{
+        "id": 16,
+        "type":"exotico",
+        "name": "colinabo purpura",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/exoticos/colinabo-purpura.jpg"
+    },{
+        "id": 17,
+        "type":"exotico",
+        "name": "maíz azul",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": true,
+        "img":"../img/exoticos/maiz-azul.jpg"
+    },{
+        "id": 18,
+        "type":"exotico",
+        "name": "maíz gema de cristal",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": true,
+        "img":"../img/exoticos/maiz-gema-cristal.jpg"
+    },{
+        "id": 19,
+        "type":"exotico",
+        "name": "maíz popcorn frutilla<",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": true,
+        "img":"../img/exoticos/maiz-popcorn-frutilla.jpg"
+    },{
+        "id": 1,
+        "type":"exotico",
+        "name": "brazilian pumpkin",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/exoticos/romanesco.jpg"
+    },{
+        "id": 1,
+        "type":"exotico",
+        "name": "brazilian pumpkin",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/exoticos/romanesco.jpg"
+    },{
+        "id": 1,
+        "type":"exotico",
+        "name": "brazilian pumpkin",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/exoticos/romanesco.jpg"
+    },{
+        "id": 1,
+        "type":"exotico",
+        "name": "brazilian pumpkin",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/exoticos/romanesco.jpg"
+    },{
+        "id": 1,
+        "type":"exotico",
+        "name": "brazilian pumpkin",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/exoticos/romanesco.jpg"
+    },{
+        "id": 1,
+        "type":"exotico",
+        "name": "brazilian pumpkin",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/exoticos/romanesco.jpg"
+    },{
+        "id": 1,
+        "type":"aji",
+        "name": "brazilian pumpkin",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/exoticos/romanesco.jpg"
+    },{
+        "id": 1,
+        "type":"aji",
+        "name": "brazilian pumpkin",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/exoticos/romanesco.jpg"
+    },{
+        "id": 1,
+        "type":"aji",
+        "name": "brazilian pumpkin",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/exoticos/romanesco.jpg"
+    },{
+        "id": 1,
+        "type":"aji",
+        "name": "brazilian pumpkin",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/exoticos/romanesco.jpg"
+    },{
+        "id": 1,
+        "type":"aji",
+        "name": "brazilian pumpkin",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/exoticos/romanesco.jpg"
+    },{
+        "id": 1,
+        "type":"aji",
+        "name": "brazilian pumpkin",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/ajies/brazilian-pumpkin.jpg"
+    },{
+        "id": 1,
+        "type":"aji",
+        "name": "brazilian pumpkin",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/ajies/brazilian-pumpkin.jpg"
+    },{
+        "id": 1,
+        "type":"aji",
+        "name": "brazilian pumpkin",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/ajies/brazilian-pumpkin.jpg"
+    },{
+        "id": 1,
+        "type":"aji",
+        "name": "brazilian pumpkin",
+        "description": "Semillas para sembrar en primavera. Consultar stock y envíos por whatsapp.",
+        "stock": false,
+        "img":"../img/ajies/brazilian-pumpkin.jpg"
+    }
+]
