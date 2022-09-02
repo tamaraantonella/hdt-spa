@@ -1,0 +1,194 @@
+.main__banner{
+    width: 100%;
+    height: 350px;
+    background-image: url(https://res.cloudinary.com/dfbxjt69z/image/upload/v1662129293/delTomate/banner_ubxf59.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main__bannerContainer{
+    background-color:rgba(11, 11, 10, 0.534);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+}
+.boxText{
+    width: 90%;
+    text-align: center;
+}
+.boxText h1{
+    font-size: 2rem;
+    color: white;
+    text-shadow: 8px 8px 12px black;
+    text-transform: uppercase;
+    font-family: var(--font);
+}
+.main__bannerLink{
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    transition: var(--transition);
+    font-size: 2rem;
+    text-shadow: 3px 3px 6px black;
+}
+.main__bannerLink:hover{
+    transform: scale(1.1);
+    color:rgb(147, 216, 162);
+}
+.main__bolsones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin:1rem 0;
+    justify-content: center;
+    gap: 1rem;
+    height: 700px ;
+}
+.main__bolsones h2{
+    text-transform: uppercase;
+    width: 80%;
+    color:var(--verdeOscuro);
+}
+.boxBolson{
+    display: flex;
+            flex-direction: column;
+}
+.boxBolson img{
+    height: 250px;
+    width:100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+.boxBolson h4{
+    text-transform: uppercase;
+    padding: 15px;
+    color: var(--verdeOscuro);
+}
+.main__bolsones p{
+    width: 90%;
+    font-size: 1rem;
+}
+.textBolson{
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+.textBolson p{
+    margin: 25px 0;
+}
+.link{
+    text-decoration: none;
+    color: var(--verdeOscuro);
+    transition: var(--transition);
+    font-weight: bold;
+}
+.link:hover{
+    color: var(--colorNaranja);
+}
+.boxes__container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--verdeBg);
+}
+.box{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    height: fit-content;
+    text-align: center;
+    transition: all .4s ease-in-out;
+    color:var(--colorTextoLight);
+    padding:8px;
+}
+.box:hover{
+    transform: perspective(800px) rotateY(-20deg);
+}
+.box h3{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.box p{
+    width: 100%;
+    font-size: 1rem;
+    text-align: justify;
+}
+.attention{
+    background-color: var(--verdeBg);
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 2rem;
+    display: block;
+    text-decoration: none;
+    transition: var(--transition);
+}
+.attention:hover{
+    background-color: var(--colorNaranja);
+}
+
+/* media queries */
+@media screen and (min-width:768px){
+    .main__banner{
+        height: 600px;
+    }
+    .boxText h1{
+        font-size: 4rem;
+    }
+    .main__bolsones{
+        height: fit-content;
+    }
+    .main__bolsones h2{
+        margin: 15px 0px;
+        font-size: 2rem;
+    }
+    .main__bolsones p{
+        margin: 15px 0px;
+    }
+    .boxBolson{
+        flex-direction: row;
+        align-items: center;
+        width: 90%;
+    }
+    .boxBolson img{
+        width: 30%;
+        height: 350px;
+    }
+    .textBolson{
+        width: 50%;
+        text-align: justify;
+    }
+    .textBolson p{
+        padding: 0;
+        margin: 12px 0;
+        width: 100%;
+    }
+    .boxes__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items:center;
+        width: 100%;
+    }
+    .box{
+        width: 30%;
+        height:200px;
+    }
+    .box p{
+        width: 90%;
+        margin: auto;
+        font-size: 1rem;       
+    }
+}

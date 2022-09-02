@@ -1,0 +1,23 @@
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin:0 auto;
+    flex-direction: column;
+}
+.loader img{
+    width: 220px;
+    height: 280px;
+    object-fit: contain;
+}
+.irAtras button{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: var(--colorPrincipal);
+    border:none;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
