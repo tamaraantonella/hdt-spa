@@ -1,0 +1,73 @@
+.productMain{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0px;
+}
+.title h2, h3{
+    text-transform: uppercase;
+    color: var(--verdeOscuro);
+    font-family: var(--font);
+}
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    align-items: center;
+}
+.boxP{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 15px;
+}
+.boxP div{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.493);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    text-align: center;
+}
+.boxP div:hover{
+    background-color: inherit;
+}
+.link{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-shadow: 5px 5px 8px black;
+}
+.semillas{
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://res.cloudinary.com/dfbxjt69z/image/upload/v1662140291/delTomate/semilla_ipj054.jpg);
+}
+.plantines{
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://res.cloudinary.com/dfbxjt69z/image/upload/v1662140292/delTomate/plantines_hfwbzp.jpg);
+}
+.bolsones{
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://res.cloudinary.com/dfbxjt69z/image/upload/v1662129943/delTomate/bolson_qrgz0i.jpg);
+}
+.conservas{
+    background-image: url(https://res.cloudinary.com/dfbxjt69z/image/upload/v1662140295/delTomate/salsa_homfnr.jpg);
+    background-position: center;
+    background-size: cover;
+}

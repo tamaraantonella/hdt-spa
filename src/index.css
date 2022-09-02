@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Source Sans Pro', sans-serif;
+  max-width: 1420px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 auto;
+}
+body{
+  width: 90%;
+  max-width: 1400px;
+}
+
+:root{
+ --colorPrincipal :#355e1b;
+  --verdeOscuro: #56694b;
+  --verdeBg:#a1ab8e;
+  --colorTextoBlack:#181c1b;
+  --colorTextoLight: #ecebe3;
+  --colorNaranja: #f08d54;
+  --colorMultiuso: #ac6349;
+  --colorLightNaranja: #edbd50;
+  --colorFondoHeader: #ffffffd5;
+  --transition: all .2s ease-in-out;
+  --font:'Quicksand', sans-serif;
+}
+.active{
+  font-weight: bold;
+}
+button{
+  cursor: pointer;
+}
