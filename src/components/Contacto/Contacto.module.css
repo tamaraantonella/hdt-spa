@@ -37,6 +37,7 @@
 .title{
     font-size: 1.3rem;
     color: var(--verdeOscuro);
+    margin-bottom: 20px;
 }
 .title p a{
     transition: all .3s ease-in-out;
@@ -70,10 +71,22 @@
 .ubicacion p{
     font-size: 1.2rem;
 }
+.important{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
 .ubicacion iframe{
     width: 100%;
     height: 70%;
     border: none;
+}
+.aqui{
+    color: var(--colorNaranja);
+    transition: var(--transition);
+}
+.aqui:hover{
+    color: var(--colorPrincipal);
+    text-decoration: underline;
 }
 .contactForm{
     display: grid;

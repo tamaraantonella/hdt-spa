@@ -3,11 +3,14 @@ import axios from 'axios';
 export function getProducts (){
     return async (dispatch)=>{
         try{
-            setTimeout(async () => {}, 1000);
-            const res = await axios.get(`https://631248c9f5cba498da905dc6.mockapi.io/products`)
+            setTimeout(async () => {}, 500);
+            const res = await axios.get(`https://631248c9f5cba498da905dc6.mockapi.io/conservas`)
+            const res2 = await axios.get('https://631248c9f5cba498da905dc6.mockapi.io/plantines')
+            const res3 = await axios.get('https://631248c9f5cba498da905dc6.mockapi.io/semillas')
+            const all = res.data.concat(res2.data.concat(res3.data))            
             dispatch({
                 type:'GET_PRODUCT',
-                payload:res.data})
+                payload:all})
         }catch(err){
             console.log(err)
         }

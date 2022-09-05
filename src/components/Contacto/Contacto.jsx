@@ -12,11 +12,11 @@ export default function Contacto() {
         <section className={s.contactSection}>
             <div className={s.contactData}>
                 <div className={s.title}>
-                    <p><a href="http://wa.link/0435k6">Escribinos al whatsapp <strong>aquí</strong></a></p>
+                    <p><a href="http://wa.link/0435k6">Escribinos al whatsapp <strong className={s.aqui}>aquí</strong></a></p>
                 </div>
                 <div className={s.horarios}>
                     <h3>Podes comunicarte en los siguientes horarios</h3>
-                    <p className={s.important}>Atencion telefonica: </p>
+                    <p className={s.important}>Atencion telefónica: </p>
                     <p>LUN a VIE 9-18hs</p>
                     <p className={s.important}>Atención presencial en la huerta: </p>
                     <p>MIE y SAB 9-12hs</p>
