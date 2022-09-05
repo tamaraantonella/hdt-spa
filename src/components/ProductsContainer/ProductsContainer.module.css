@@ -99,12 +99,14 @@
     position: absolute;
     bottom: 20px;
 }
+.option{
+    text-transform: capitalize;
+}
 .noStock{
     text-transform: capitalize;
     font-size: 1.3rem;
-    font-weight: 300;
+    font-weight: bold;
     text-align: left;
-    color: #ff0000;
     font-weight: bold;
     position: absolute;
     bottom: 20px;

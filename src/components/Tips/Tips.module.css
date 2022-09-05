@@ -2,10 +2,13 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 90vh;
     height: 100%;
+    justify-content: center;
 }
-
+.intro{
+    color:var(--colorNaranja);
+    font-weight: bold;
+}
 .text{
     width: 90%;
 }
@@ -68,6 +71,6 @@ color: var(--colorTextoLight);}
         grid-template-columns: repeat(4,1fr);
     }
     .blockBox{
-        width: 80%;
+        width: 90%;
     }
 }

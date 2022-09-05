@@ -71,3 +71,19 @@
     background-position: center;
     background-size: cover;
 }
+
+/* media queries */
+@media screen and (min-width:768px){
+    
+    .options{
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+    }
+    .boxP{
+        width: 350px;
+        height: 350px;
+        margin-bottom: 15px;
+    }
+}

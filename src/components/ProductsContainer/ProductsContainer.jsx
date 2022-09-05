@@ -47,15 +47,15 @@ export default function ProductsContainer() {
         </div>
         <div className={s.selectCont}>
             <select className={s.select} onChange={e=>handleSort(e)} value={ordenar}>
-                <option hidden>Ordenar</option>
-                <option value="asc">Ordenar A-Z</option>
-                <option value="desc">Ordenar Z-A</option>
+                <option hidden className={s.option}>Ordenar</option>
+                <option value="asc" className={s.option}>Ordenar A-Z</option>
+                <option value="desc" className={s.option}>Ordenar Z-A</option>
             </select>
             <select  className={s.select} onChange={e=>handleFilter(e)}>
-                <option hidden>Filtrar por tipo</option>
-                <option value='all'>Todos</option>
+                <option hidden className={s.option}>Filtrar por tipo</option>
+                <option value='all' className={s.option}>Todos</option>
                 {types.length && types.map((e, i) => {
-                    return <option key={i} value={e}>{e}</option>
+                    return <option className={s.option} key={i} value={e}>{e}</option>
                 })}
             </select>
         </div>
