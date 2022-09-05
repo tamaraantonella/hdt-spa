@@ -4,7 +4,10 @@ footer{
     flex-direction: column;
     justify-content: center;
     padding: 15px 0px;
+    bottom: 0;
+    justify-self: end;
 }
+
 .footer__ContainerMenu{
         display: flex;
         align-items: center;

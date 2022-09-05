@@ -1,5 +1,4 @@
 import {BsWhatsapp} from 'react-icons/bs'
-import {Link} from 'react-router-dom'
 import React from 'react'
 import s from   './Whatsapp.module.css'
 

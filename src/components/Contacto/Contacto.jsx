@@ -16,8 +16,10 @@ export default function Contacto() {
                 </div>
                 <div className={s.horarios}>
                     <h3>Podes comunicarte en los siguientes horarios</h3>
-                    <p>Atencion telefonica: LUN - VIE 9-18hs</p>
-                    <p>Atención presencial en la huerta: MIE y SAB 9-12hs</p>
+                    <p className={s.important}>Atencion telefonica: </p>
+                    <p>LUN a VIE 9-18hs</p>
+                    <p className={s.important}>Atención presencial en la huerta: </p>
+                    <p>MIE y SAB 9-12hs</p>
                 </div>
             </div>
             <div className={s.ubicacion}>
