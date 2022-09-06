@@ -184,6 +184,10 @@
         height: 400px;
         
     }
+    .noCard{
+        width: 320px;
+        height: 400px;
+    }
     .titleLoader{
         display: flex;
         flex-direction: column;
