@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer>
         <nav className={s.footer__ContainerMenu}>
-            <NavLink to="/" className={s.navLink}>Inicio</NavLink>
+            <NavLink to="/" className={s.navLink}>Home</NavLink>
             <NavLink to="/nosotros" className={s.navLink}>Nosotros</NavLink>
             <NavLink to="/productos" className={s.navLink}>Productos</NavLink>
             <NavLink to="/tips" className={s.navLink}>Tips</NavLink>

@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 
 import Bolsones from '../Bolsones/Bolsones'
+import Cart from '../Cart/Cart'
 import Contacto from '../Contacto/Contacto'
 import Home from '../Home/Home'
 import Nosotros from '../Nosotros/Nosotros'
@@ -21,6 +22,7 @@ export default function Main() {
             <Route path="/productos" element={<ProductTypes/>}  />
             <Route path="/tips" element={<Tips/>} />
             <Route path="/contacto" element={<Contacto/>}  />
+            <Route path="/cart" element={<Cart/>} />
             <Route path="/productos/:category" element={<ProductsContainer/>} />
             <Route path='/bolsones' element={<Bolsones/>} />
         </Routes>

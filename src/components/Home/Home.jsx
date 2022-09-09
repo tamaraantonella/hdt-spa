@@ -17,6 +17,17 @@ export default function Home() {
                 </div>
             </div>  
       </section>
+      <div className={s.novedades}>
+        <div className={s.gif}>
+          <img src="https://res.cloudinary.com/dfbxjt69z/image/upload/v1662743341/giphy_z0oh4j.gif" alt="" />
+        </div>
+          
+          <p className={s.textnov}>Ahora podés seleccionar las semillas que te gustaría consultar, y armar un pedido que nos va a llegar por whatsapp.</p>
+          <p className={s.textnov}>Luego por ese medio seguimos coordinando todo para que puedas tener las semillas de las variedades que quieras!</p>
+          <p className={s.textnov}>Las semillas vienen en paquetes, 1 unidad es equivalente a 1 sobre de semillas. </p>
+          <p className={s.sintesis}>Más simple, más rapido, más cómodo.</p>
+          <p className={s.aclaracion}>Aclaración: el pedido es un estimativo, y se puede modificar. En el caso que nos hayamos quedado sin stock te lo avisaremos al solicitar el pedido, asimismo si querés agregar alguna variedad más podés aclararlo por ese mismo medio.</p>
+      </div>
       <div className={s.main__bolsones} id="bolson">
         <h2>bolsones agroecológicos</h2>
         <div className={s.boxBolson}>

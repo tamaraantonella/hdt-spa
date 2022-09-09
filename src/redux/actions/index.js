@@ -43,3 +43,24 @@ export function sortProducts (sort){
         payload:sort
     }
 }
+
+export function addToCart (product,count){
+    return {
+        type:'ADD_TO_CART',
+        product,
+        count
+    }
+}
+
+export function removeFromCart (id){
+    return {
+        type:'REMOVE_FROM_CART',
+        payload:id
+    }
+}
+
+export function resetCarrito (){
+    return {
+        type:'RESET_CARRITO'
+    }
+}

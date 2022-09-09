@@ -3,6 +3,7 @@ import { filterProducts, getByCategory, resetCategory, sortProducts } from '../.
 import { useDispatch, useSelector } from 'react-redux'
 
 import {AiOutlineClose} from 'react-icons/ai'
+import Counter from '../Counter/Counter'
 import Loader from '../Loader/Loader'
 import {VscCheck} from 'react-icons/vsc'
 import s from  './ProductsContainer.module.css'
@@ -13,7 +14,6 @@ export default function ProductsContainer() {
     const dispatch = useDispatch()
     const categoryProducts = useSelector(state => state.categoryProducts)
     const types= useSelector(state => state.types)
-    console.log(categoryProducts)
     //eslint-disable-next-line
     const [order, setOrder]=useState('')
     const [ordenar, setOrdenar]=useState('')
@@ -68,6 +68,7 @@ export default function ProductsContainer() {
                         <p className={s.cardSubTitle}>Tipo: {product.type}</p>
                         <p className={s.cardInfo}>{product.description}</p>
                         <p className={product.stock? s.stock : s.noStock}>Stock: {product.stock ? <VscCheck/> : <AiOutlineClose/>}</p>
+                        <div className={s.cart}>{product.category ==='semillas'&& product.stock && <Counter product={product}/>}</div>
                     </div>
                 </div>
             )): 
