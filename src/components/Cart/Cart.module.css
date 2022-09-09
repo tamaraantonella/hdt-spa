@@ -1,0 +1,113 @@
+.container{
+    width: 100%;
+    height: 100%;
+    margin:20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.imgBox{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    filter:grayscale(50%);
+}
+.imgBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.title{
+    text-transform: uppercase;
+    color: var(--verdeOscuro);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+.text{
+    text-align: justify;
+    margin-bottom: 15px;
+}
+.noText{
+    font-size: 1.8rem;
+    color: #fff;
+    font-family: var(--font);
+    text-align: center;
+    background-color: var(--colorNaranja);
+    border-radius: 10px;
+}
+.pedidoContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin:15px auto;
+}
+.pedidoName{
+    text-transform: capitalize;
+}
+.button {
+    border:none;
+    color:var(--verdeOscuro);
+    background-color:transparent;
+}
+.send{
+    background-color: var(--verdeOscuro);
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 15px auto;
+    border-color: transparent;
+    transition: all .2s ease-in-out;
+}
+.send:hover{
+    background-color: var(--colorNaranja);
+    color: #fff;
+}
+.cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+/* media queries */
+@media (min-width: 768px){
+    .container{
+        width: 50%;
+        min-height: 300px;
+        height: 100%;
+    }
+    .pedidoContainer{
+        width: 60%;
+    }
+    .noText{
+        font-size: 1.8rem;
+        color: #fff;
+        font-family: var(--font);
+        padding: 10px 20px;
+        text-align: center;
+        background-color: var(--colorNaranja);
+        border-radius: 10px;
+    }
+    .imgBox{
+        width: 100%;
+        height: 350px;
+        margin:0 auto;
+    }
+}
+@media (min-width: 1200px){
+    .container{
+        width: 60%;
+        min-height: 60vh;
+        height: 100%;
+    }
+    .text{
+        font-size: 1.2rem;
+    }
+}
